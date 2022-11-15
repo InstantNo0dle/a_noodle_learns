@@ -5,11 +5,11 @@
     "fontSize": 17,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiStickyNoteFill",
-      "RiAddCircleFill",
-      "RiAddBoxFill",
-      "RiAddFill",
-      "RiTimerFlashLine"
+      "📔",
+      "🍱",
+      "RiDocumentBookMarkLine",
+      "📬",
+      "📓"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,11 +20,13 @@
       "left": 2
     }
   },
-  "01 inbox": "RiInboxFill",
   "02 peak learning": "RiPencilRulerFill",
   "03 high school": "RiCompassesFill",
   "04 journal": "RiBookFill",
   "05 life": "RiTimerFlashLine",
   "templates": "RiAddCircleFill",
-  "attachments": "RiStickyNoteFill"
+  "attachments": "RiStickyNoteFill",
+  "02 journal": "📔",
+  "01 inbox": "📬",
+  "docs": "🍱"
 }

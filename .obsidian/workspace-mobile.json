@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02.01 peak learning/Chagas' disease.md",
+                "file": "docs/03.01 peak learning/Chagas' disease.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07cd5d43786c259e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 journal/2022/2022-11/20221115.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "docs/02.01 peak learning/Chagas' disease.md",
+            "file": "02 journal/2022/2022-11/20221115.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "docs/02.01 peak learning/Chagas' disease.md",
+            "file": "02 journal/2022/2022-11/20221115.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "docs/02.01 peak learning/Chagas' disease.md"
+            "file": "02 journal/2022/2022-11/20221115.md"
           }
         }
       },
@@ -129,17 +142,17 @@
     ],
     "currentTab": 2
   },
-  "active": "54177772af81a9ae",
+  "active": "07cd5d43786c259e",
   "lastOpenFiles": [
-    "docs/02.01 peak learning/Bernoulli's Equation.md",
-    "docs/02.01 peak learning/Acid-base definitions.md",
-    "docs/02.02 high school/East Asian history in the period 600s-1200s.md",
     "02 journal/2022/2022-11/20221115.md",
+    "docs/03.01 peak learning/Chagas' disease.md",
+    "docs/02.02 high school/Untitled.md",
+    "docs/03.01 peak learning/Bernoulli's Equation.md",
+    "docs/03.01 peak learning/Acid-base definitions.md",
+    "docs/03.02 high school/East Asian history in the period 600s-1200s.md",
     "02 peak learning/Bacteria phylogeny.md",
     "02 peak learning/Atomic radius.md",
     "02 peak learning/Absorption Spectrum.md",
-    "02 peak learning/Acid-base definitions.md",
-    "02 peak learning/Action Spectrum.md",
-    "02 peak learning/Alternation of generations.md"
+    "02 peak learning/Acid-base definitions.md"
   ]
 }
