@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "0bf36d8f411e856a",
+    "type": "split",
+    "children": [
+      {
+        "id": "47a5ef8facf72b6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54177772af81a9ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 peak learning/Gram positive bacteria.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "97b4c2052230588f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "5d2cdf3b94d62041",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c7abbdc5c1a18632",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "70ed5ce10fc9d5eb",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "4292c5b67f7ba597",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "0c0f045552949d87",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8843737b536cdef0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "02 peak learning/Gram positive bacteria.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": true,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "57c3a79391f44858",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "02 peak learning/Gram positive bacteria.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "e8df5e83aef0bb92",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "02 peak learning/Gram positive bacteria.md"
+          }
+        }
+      },
+      {
+        "id": "c180f856dff2b099",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "active": "54177772af81a9ae",
+  "lastOpenFiles": [
+    "02 peak learning/Bacteria phylogeny.md",
+    "02 peak learning/Atomic radius.md",
+    "02 peak learning/Absorption Spectrum.md",
+    "02 peak learning/Acid-base definitions.md",
+    "02 peak learning/Action Spectrum.md",
+    "02 peak learning/Alternation of generations.md",
+    "01 inbox/euler's totient function.md",
+    "01 inbox/2021 Fall AMC 10A.md",
+    "02 peak learning/models of molecular shape and structure.md",
+    "01 inbox/markov random field.md"
+  ]
+}

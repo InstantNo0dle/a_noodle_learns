@@ -1,0 +1,30 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 17,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiStickyNoteFill",
+      "RiAddCircleFill",
+      "RiAddBoxFill",
+      "RiAddFill",
+      "RiTimerFlashLine"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 2,
+      "bottom": 0,
+      "left": 2
+    }
+  },
+  "01 inbox": "RiInboxFill",
+  "02 peak learning": "RiPencilRulerFill",
+  "03 high school": "RiCompassesFill",
+  "04 journal": "RiBookFill",
+  "05 life": "RiTimerFlashLine",
+  "templates": "RiAddCircleFill",
+  "attachments": "RiStickyNoteFill"
+}

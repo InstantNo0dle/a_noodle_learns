@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "bf358ed96a27e41f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d36e6a29b158196d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Daily Todo/20220826.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a768700505825b71",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9d4feb359869e71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c42608699350522",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cd36b974c7b99493",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3faa7a83b598b270",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 249
+  },
+  "right": {
+    "id": "1dcad5ebddcfc02e",
+    "type": "split",
+    "children": [
+      {
+        "id": "049108562eee9151",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89f676bae91fb939",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Daily Todo/20220826.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "34242841603fca43",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Daily Todo/20220826.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0292b770fd29966e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4caacdd55a592997",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Daily Todo/20220826.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "34242841603fca43",
+  "lastOpenFiles": [
+    "Daily Todo/20220825.md",
+    "Daily Todo/20220826.md",
+    "Daily Todo/20220824.md",
+    "Daily Todo/20220823.md",
+    "Physics/Precession of a Gyroscope.md",
+    "Physics/Newton's Second Law.md",
+    "Earth Science/Axial Precession.md",
+    "Physics/Conservation of Angular Momentum.md",
+    "Physics/Angular Momentum.md",
+    "Physics/Moment of Inertia.md"
+  ]
+}

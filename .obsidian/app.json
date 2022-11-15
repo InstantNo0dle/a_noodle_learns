@@ -1,0 +1,16 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "attachments",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "defaultViewMode": "preview",
+  "communityThemeSortOrder": "download",
+  "showInlineTitle": false,
+  "newFileFolderPath": "01 inbox",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

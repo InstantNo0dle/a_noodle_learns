@@ -1,0 +1,79 @@
+{
+  "customFolder": "Day Planners",
+  "mode": 1,
+  "mermaid": false,
+  "notesToDates": [
+    {
+      "date": "Sun Aug 14 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220820.md",
+      "date": "Sat Aug 20 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220821.md",
+      "date": "Sun Aug 21 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220822.md",
+      "date": "Mon Aug 22 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220823.md",
+      "date": "Tue Aug 23 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220824.md",
+      "date": "Wed Aug 24 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220825.md",
+      "date": "Thu Aug 25 2022"
+    },
+    {
+      "notePath": "Daily Todo/20220826.md",
+      "date": "Fri Aug 26 2022"
+    },
+    {
+      "notePath": "04 journal/20221105.md",
+      "date": "Sat Nov 05 2022"
+    },
+    {
+      "notePath": "04 journal/20221106.md",
+      "date": "Sun Nov 06 2022"
+    },
+    {
+      "notePath": "04 journal/20221107.md",
+      "date": "Mon Nov 07 2022"
+    },
+    {
+      "notePath": "04 journal/20221108.md",
+      "date": "Tue Nov 08 2022"
+    },
+    {
+      "notePath": "04 journal/20221111.md",
+      "date": "Fri Nov 11 2022"
+    },
+    {
+      "notePath": "04 journal/20221112.md",
+      "date": "Sat Nov 12 2022"
+    },
+    {
+      "notePath": "04 journal/20221113.md",
+      "date": "Sun Nov 13 2022"
+    },
+    {
+      "notePath": "04 journal/2022/2022-11/20221114.md",
+      "date": "Mon Nov 14 2022"
+    },
+    {
+      "notePath": "04 journal/2022/2022-11/20221115.md",
+      "date": "Tue Nov 15 2022"
+    }
+  ],
+  "completePastItems": true,
+  "circularProgress": true,
+  "nowAndNextInStatusBar": true,
+  "showTaskNotification": false,
+  "timelineZoomLevel": 3
+}

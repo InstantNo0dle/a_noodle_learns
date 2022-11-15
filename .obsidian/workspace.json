@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "bf358ed96a27e41f",
+    "type": "split",
+    "children": [
+      {
+        "id": "be618124898b06e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12a36d3a1f715af1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a768700505825b71",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9d4feb359869e71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c42608699350522",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd36b974c7b99493",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3faa7a83b598b270",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 249
+  },
+  "right": {
+    "id": "1dcad5ebddcfc02e",
+    "type": "split",
+    "children": [
+      {
+        "id": "049108562eee9151",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89f676bae91fb939",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "34242841603fca43",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "0292b770fd29966e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4caacdd55a592997",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "619cee51abb570bf",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          },
+          {
+            "id": "41f90acd5dc3f652",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5,
+    "collapsed": true
+  },
+  "active": "5c42608699350522",
+  "lastOpenFiles": [
+    "04 journal/2022/2022-11/20221114.md",
+    "03 high school/Research Plan.md",
+    "04 journal/2022/2022-11/20221115.md",
+    "01 inbox/Untitled.md",
+    "01 inbox/euler's totient function.md",
+    "03 high school/Wendi.md",
+    "04 journal/20221114.md",
+    "02 peak learning/Chemiosmosis.md",
+    "02 peak learning/C3 Plants.md",
+    "02 peak learning/Bernoulli's Equation.md"
+  ]
+}
