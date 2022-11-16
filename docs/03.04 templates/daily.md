@@ -6,6 +6,11 @@ time: <%tp.file.creation_date('HH:mm')%>
 >
 
 ## todo's
+### for today
+```tasks
+not done
+scheduled date is today AND start date is today
+```
 - [ ] 
 
 ## today's plan

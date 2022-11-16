@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 journal/2022/2022-11/20221115.md",
-                "mode": "source",
+                "file": "docs/03.04 templates/daily.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 journal/2022/2022-11/20221115.md",
+                "file": "docs/03.04 templates/daily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 journal/2022/2022-11/20221115.md",
+                "file": "docs/03.04 templates/daily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 journal/2022/2022-11/20221115.md"
+                "file": "docs/03.04 templates/daily.md"
               }
             }
           },
@@ -155,15 +155,15 @@
   },
   "active": "3b714c37fcda27d4",
   "lastOpenFiles": [
-    "02 journal/Untitled.md",
+    "docs/03.04 templates/atomic note.md",
+    "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221115.md",
+    "02 journal/Untitled.md",
     "docs/templates/atomic note.md",
     "01 inbox/perpendicular length contraction is conserved.md",
     "02 docs/index.md",
     "04 journal/2022/2022-11/20221114.md",
     "03 high school/Research Plan.md",
-    "04 journal/2022/2022-11/20221115.md",
-    "01 inbox/Untitled.md",
-    "01 inbox/euler's totient function.md"
+    "04 journal/2022/2022-11/20221115.md"
   ]
 }
