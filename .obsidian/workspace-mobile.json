@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54177772af81a9ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/03.01 peak learning/Chagas' disease.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "07cd5d43786c259e",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -144,8 +131,8 @@
   },
   "active": "07cd5d43786c259e",
   "lastOpenFiles": [
-    "02 journal/2022/2022-11/20221115.md",
     "docs/03.01 peak learning/Chagas' disease.md",
+    "02 journal/2022/2022-11/20221115.md",
     "docs/02.02 high school/Untitled.md",
     "docs/03.01 peak learning/Bernoulli's Equation.md",
     "docs/03.01 peak learning/Acid-base definitions.md",
