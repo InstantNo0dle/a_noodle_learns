@@ -11,6 +11,7 @@ time: <%tp.file.creation_date('HH:mm')%>
 not done
 happens today
 short mode
+hide task count
 ```
 ### upcoming
 ```tasks
@@ -18,6 +19,7 @@ not done
 scheduled after today OR starts after today
 filename does not include <%tp.date.now("YYYYMMDD")
 short mode
+hide task count
 ```
 ## today's plan
 - [ ] 
