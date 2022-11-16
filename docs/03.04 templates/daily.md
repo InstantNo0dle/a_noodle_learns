@@ -9,10 +9,16 @@ time: <%tp.file.creation_date('HH:mm')%>
 ### for today
 ```tasks
 not done
-scheduled date is today AND start date is today
+happens today
+short mode
 ```
-- [ ] 
-
+### upcoming
+```tasks
+not done
+scheduled after today OR starts after today
+filename does not include <%tp.date.now("YYYYMMDD")
+short mode
+```
 ## today's plan
 - [ ] 
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "47a5ef8facf72b6c",
+        "id": "522f8ac1e639fb7d",
         "type": "tabs",
         "children": [
           {
-            "id": "07cd5d43786c259e",
+            "id": "c0bfe75c56a76a29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 journal/2022/2022-11/20221115.md",
+                "file": "02 journal/2022/2022-11/20221116.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "02 journal/2022/2022-11/20221115.md",
+            "file": "02 journal/2022/2022-11/20221116.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "02 journal/2022/2022-11/20221115.md",
+            "file": "02 journal/2022/2022-11/20221116.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "02 journal/2022/2022-11/20221115.md"
+            "file": "02 journal/2022/2022-11/20221116.md"
           }
         }
       },
@@ -125,21 +125,29 @@
           "type": "review-queue-list-view",
           "state": {}
         }
+      },
+      {
+        "id": "a59a8834d9ff62fb",
+        "type": "leaf",
+        "state": {
+          "type": "timeline",
+          "state": {}
+        }
       }
     ],
-    "currentTab": 2
+    "currentTab": 4
   },
-  "active": "07cd5d43786c259e",
+  "active": "c0bfe75c56a76a29",
   "lastOpenFiles": [
-    "docs/03.01 peak learning/Chagas' disease.md",
+    "docs/03.04 templates/daily.md",
+    "02 journal/2022/2022-11/20221116.md",
     "02 journal/2022/2022-11/20221115.md",
+    "docs/03.01 peak learning/Chagas' disease.md",
     "docs/02.02 high school/Untitled.md",
     "docs/03.01 peak learning/Bernoulli's Equation.md",
     "docs/03.01 peak learning/Acid-base definitions.md",
     "docs/03.02 high school/East Asian history in the period 600s-1200s.md",
     "02 peak learning/Bacteria phylogeny.md",
-    "02 peak learning/Atomic radius.md",
-    "02 peak learning/Absorption Spectrum.md",
-    "02 peak learning/Acid-base definitions.md"
+    "02 peak learning/Atomic radius.md"
   ]
 }

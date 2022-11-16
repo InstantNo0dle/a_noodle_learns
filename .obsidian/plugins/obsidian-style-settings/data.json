@@ -119,5 +119,8 @@
   "obsidian-prism-theme@@pt-font-disable-ligatures": true,
   "obsidian-prism-theme@@color-schemes-lt": "pt-color-scheme-latte-lt",
   "shimmering-focus@@mac-os-native": false,
-  "shimmering-focus@@show-file-explorer-navigation": false
+  "shimmering-focus@@show-file-explorer-navigation": false,
+  "obsidian-prism-theme@@light-accent-color-preset": "pt-accent-color-cyan-lt",
+  "title@@custom-page-header": false,
+  "title@@advanced-toolbar-mode": true
 }
