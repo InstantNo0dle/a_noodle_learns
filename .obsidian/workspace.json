@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "12a36d3a1f715af1",
+            "id": "3b714c37fcda27d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -153,8 +153,10 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "12a36d3a1f715af1",
+  "active": "3b714c37fcda27d4",
   "lastOpenFiles": [
+    "02 journal/Untitled.md",
+    "02 journal/2022/2022-11/20221115.md",
     "docs/templates/atomic note.md",
     "01 inbox/perpendicular length contraction is conserved.md",
     "02 docs/index.md",
@@ -162,8 +164,6 @@
     "03 high school/Research Plan.md",
     "04 journal/2022/2022-11/20221115.md",
     "01 inbox/Untitled.md",
-    "01 inbox/euler's totient function.md",
-    "03 high school/Wendi.md",
-    "04 journal/20221114.md"
+    "01 inbox/euler's totient function.md"
   ]
 }
