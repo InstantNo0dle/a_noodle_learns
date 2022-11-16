@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "be618124898b06e3",
+        "id": "7ec96d4b8f7d2a0d",
         "type": "tabs",
         "children": [
           {
-            "id": "3b714c37fcda27d4",
+            "id": "8ccd5e9f462d14ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/03.04 templates/daily.md",
-                "mode": "preview",
+                "file": "02 journal/2022/2022-11/20221116.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/03.04 templates/daily.md",
+                "file": "02 journal/2022/2022-11/20221116.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/03.04 templates/daily.md",
+                "file": "02 journal/2022/2022-11/20221116.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/03.04 templates/daily.md"
+                "file": "02 journal/2022/2022-11/20221116.md"
               }
             }
           },
@@ -153,17 +153,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "3b714c37fcda27d4",
+  "active": "8ccd5e9f462d14ee",
   "lastOpenFiles": [
-    "docs/03.04 templates/atomic note.md",
-    "docs/03.04 templates/daily.md",
+    "docs/03.01 peak learning/Linear Algebra for Machine Learning.md",
+    "02 journal/2022/2022-11/20221116.md",
     "02 journal/2022/2022-11/20221115.md",
-    "02 journal/Untitled.md",
-    "docs/templates/atomic note.md",
-    "01 inbox/perpendicular length contraction is conserved.md",
-    "02 docs/index.md",
-    "04 journal/2022/2022-11/20221114.md",
-    "03 high school/Research Plan.md",
-    "04 journal/2022/2022-11/20221115.md"
+    "docs/03.02 high school/Research Plan.md",
+    "docs/03.02 high school/China's grand canal.md",
+    "docs/03.02 high school/East Asian history in the period 600s-1200s.md",
+    "docs/03.02 high school/Liao dynasty.md",
+    "docs/03.02 high school/Equal-field system.md",
+    "docs/03.04 templates/atomic note.md",
+    "docs/03.01 peak learning/perpendicular length contraction is conserved.md"
   ]
 }
