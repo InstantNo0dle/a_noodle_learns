@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38874273a4cb8003",
+            "id": "6b85b053a36c1a3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/03.02 high school/Research Plan.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d3fa1454f648509",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,12 +32,12 @@
             }
           },
           {
-            "id": "6b85b053a36c1a3d",
+            "id": "f42f641a961de415",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/03.02 high school/Research Plan.md",
+                "file": "02 journal/2022/2022-11/20221116.md",
                 "mode": "preview",
                 "source": false
               }
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/03.02 high school/Research Plan.md",
+                "file": "02 journal/2022/2022-11/20221117.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/03.02 high school/Research Plan.md",
+                "file": "02 journal/2022/2022-11/20221117.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/03.02 high school/Research Plan.md"
+                "file": "02 journal/2022/2022-11/20221117.md"
               }
             }
           },
@@ -167,17 +179,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "6b85b053a36c1a3d",
+  "active": "6d3fa1454f648509",
   "lastOpenFiles": [
+    "02 journal/2022/2022-11/20221116.md",
     "02 journal/2022/2022-11/20221117.md",
+    "conflict-files-obsidian-git.md",
+    "docs/03.02 high school/Research Plan.md",
     "01 inbox/barometer.md",
     "01 inbox/manometer.md",
     "docs/03.01 peak learning/Pressure.md",
-    "02 journal/2022/2022-11/20221116.md",
     "01 inbox/2021 Fall AMC 10A.md",
     "01 inbox/markov random field.md",
-    "02 journal/2022/2022-11/20221108.md",
-    "02 journal/2022/2022-11/20221111.md",
-    "02 journal/2022/2022-11/20221112.md"
+    "02 journal/2022/2022-11/20221108.md"
   ]
 }
