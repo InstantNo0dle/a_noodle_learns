@@ -10,6 +10,8 @@ time: <%tp.file.creation_date('HH:mm')%>
 ```tasks
 not done
 happens today
+overdue
+filename does not include <%tp.date.now("YYYYMMDD")%>
 short mode
 hide task count
 ```
@@ -17,7 +19,7 @@ hide task count
 ```tasks
 not done
 scheduled after today OR starts after today
-filename does not include <%tp.date.now("YYYYMMDD")
+filename does not include <%tp.date.now("YYYYMMDD")%>
 short mode
 hide task count
 ```
