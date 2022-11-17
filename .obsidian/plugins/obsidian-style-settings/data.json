@@ -91,7 +91,6 @@
   "ul-theme-settings@@ul-border-choice": "dashed",
   "ul-theme-settings@@ul-note-gap": 2,
   "ul-theme-settings@@ul-border-radius": 15,
-  "anuppuccin-theme-settings@@anp-editor-font": "Satoshi",
   "anuppuccin-theme-settings@@h2-font": "MuseoModerno",
   "anuppuccin-theme-settings@@h3-font": "MuseoModerno",
   "anuppuccin-theme-settings@@h4-font": "MuseoModerno",
@@ -122,5 +121,7 @@
   "shimmering-focus@@show-file-explorer-navigation": false,
   "obsidian-prism-theme@@light-accent-color-preset": "pt-accent-color-cyan-lt",
   "title@@custom-page-header": false,
-  "title@@advanced-toolbar-mode": true
+  "title@@advanced-toolbar-mode": true,
+  "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
+  "anuppuccin-theme-settings@@anp-editor-font": "Satoshi"
 }

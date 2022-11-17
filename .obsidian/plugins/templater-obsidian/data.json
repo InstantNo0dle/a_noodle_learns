@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "templates",
+  "templates_folder": "docs/03.04 templates",
   "templates_pairs": [
     [
       "",
@@ -16,11 +16,11 @@
   "folder_templates": [
     {
       "folder": "01 inbox",
-      "template": "templates/atomic note.md"
+      "template": "docs/03.04 templates/atomic note.md"
     },
     {
       "folder": "04 journal/2022/2022-11",
-      "template": "templates/daily.md"
+      "template": "docs/03.04 templates/daily.md"
     }
   ],
   "syntax_highlighting": true,

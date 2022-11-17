@@ -1,5 +1,5 @@
 date: 08.14.2022
-tags: /fluidmechanics
+tags: #physics/fluidmechanics #chemistry/gases
 # Pressure
 The pressure **in a fluid** is the normal force per unit area:
 $$p = \frac{dF_\perp}{dA}$$
@@ -16,3 +16,5 @@ $$p = p_0 + \rho gh$$
 ```ad-danger
 Don't forget the $p_0$, especially if it's an open container!!
 ```
+
+Measuring *atmospheric* pressure is done with a [[barometer]] while measuring *system* pressure is done with a [[manometer]].

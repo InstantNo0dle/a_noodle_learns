@@ -1,8 +1,8 @@
 {
   "cssTheme": "AnuPpuccin",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 16,
   "accentColor": "#7eb6ca",
-  "textFontFamily": "",
+  "textFontFamily": "Satoshi",
   "interfaceFontFamily": "Inter"
 }
