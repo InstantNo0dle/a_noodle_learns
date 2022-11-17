@@ -20,6 +20,7 @@
     "editor:toggle-italics",
     "editor:attach-file",
     "editor:undo",
-    "editor:redo"
+    "editor:redo",
+    "editor:toggle-keyboard"
   ]
 }
