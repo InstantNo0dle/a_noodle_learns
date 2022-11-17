@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6b85b053a36c1a3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/03.02 high school/Research Plan.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
+                "file": "docs/03.02 high school/Research Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
+                "file": "docs/03.02 high school/Research Plan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md"
+                "file": "docs/03.02 high school/Research Plan.md"
               }
             }
           },
@@ -154,12 +167,12 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "38874273a4cb8003",
+  "active": "6b85b053a36c1a3d",
   "lastOpenFiles": [
+    "02 journal/2022/2022-11/20221117.md",
     "01 inbox/barometer.md",
     "01 inbox/manometer.md",
     "docs/03.01 peak learning/Pressure.md",
-    "02 journal/2022/2022-11/20221117.md",
     "02 journal/2022/2022-11/20221116.md",
     "01 inbox/2021 Fall AMC 10A.md",
     "01 inbox/markov random field.md",
