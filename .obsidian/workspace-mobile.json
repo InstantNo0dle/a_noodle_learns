@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "522f8ac1e639fb7d",
+        "id": "761f144da8cfe33b",
         "type": "tabs",
         "children": [
           {
-            "id": "c0bfe75c56a76a29",
+            "id": "7be59cef5f215868",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02 journal/2022/2022-11/20221117.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "02 journal/2022/2022-11/20221117.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "02 journal/2022/2022-11/20221117.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "02 journal/2022/2022-11/20221117.md"
+          }
         }
       },
       {
@@ -129,17 +137,17 @@
     ],
     "currentTab": 4
   },
-  "active": "c0bfe75c56a76a29",
+  "active": "7be59cef5f215868",
   "lastOpenFiles": [
+    "02 journal/2022/2022-11/20221117.md",
+    "docs/03.04 templates/daily.md",
     "Screenshot 2022-11-17 at 7.51.10 AM 1.png",
     "02 journal/2022/2022-11/20221116.md",
-    "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221115.md",
     "docs/03.01 peak learning/Chagas' disease.md",
     "docs/02.02 high school/Untitled.md",
     "docs/03.01 peak learning/Bernoulli's Equation.md",
     "docs/03.01 peak learning/Acid-base definitions.md",
-    "docs/03.02 high school/East Asian history in the period 600s-1200s.md",
-    "02 peak learning/Bacteria phylogeny.md"
+    "docs/03.02 high school/East Asian history in the period 600s-1200s.md"
   ]
 }

@@ -27595,7 +27595,7 @@ var require_luxon = __commonJS({
     function mapMonths(f3) {
       var ms = [];
       for (var i3 = 1; i3 <= 12; i3++) {
-        var dt = DateTime2.utc(2016, i3, 1);
+        var dt = DateTime4.utc(2016, i3, 1);
         ms.push(f3(dt));
       }
       return ms;
@@ -27603,7 +27603,7 @@ var require_luxon = __commonJS({
     function mapWeekdays(f3) {
       var ms = [];
       for (var i3 = 1; i3 <= 7; i3++) {
-        var dt = DateTime2.utc(2016, 11, 13 + i3);
+        var dt = DateTime4.utc(2016, 11, 13 + i3);
         ms.push(f3(dt));
       }
       return ms;
@@ -27668,7 +27668,7 @@ var require_luxon = __commonJS({
             if (opts.timeZoneName) {
               this.dt = dt;
             } else {
-              this.dt = dt.offset === 0 ? dt : DateTime2.fromMillis(dt.ts + dt.offset * 60 * 1e3);
+              this.dt = dt.offset === 0 ? dt : DateTime4.fromMillis(dt.ts + dt.offset * 60 * 1e3);
             }
           }
         } else if (dt.zone.type === "system") {
@@ -27854,7 +27854,7 @@ var require_luxon = __commonJS({
               hour: "numeric",
               hourCycle: "h12"
             };
-            _this3.meridiemCache = [DateTime2.utc(2016, 11, 13, 9), DateTime2.utc(2016, 11, 13, 19)].map(function(dt) {
+            _this3.meridiemCache = [DateTime4.utc(2016, 11, 13, 9), DateTime4.utc(2016, 11, 13, 19)].map(function(dt) {
               return _this3.extract(dt, intl, "dayperiod");
             });
           }
@@ -27871,7 +27871,7 @@ var require_luxon = __commonJS({
             era: length
           };
           if (!_this4.eraCache[length]) {
-            _this4.eraCache[length] = [DateTime2.utc(-40, 1, 1), DateTime2.utc(2017, 1, 1)].map(function(dt) {
+            _this4.eraCache[length] = [DateTime4.utc(-40, 1, 1), DateTime4.utc(2017, 1, 1)].map(function(dt) {
               return _this4.extract(dt, intl, "era");
             });
           }
@@ -28727,14 +28727,14 @@ var require_luxon = __commonJS({
         if (s4 && e3) {
           var start, startIsValid;
           try {
-            start = DateTime2.fromISO(s4, opts);
+            start = DateTime4.fromISO(s4, opts);
             startIsValid = start.isValid;
           } catch (e4) {
             startIsValid = false;
           }
           var end, endIsValid;
           try {
-            end = DateTime2.fromISO(e3, opts);
+            end = DateTime4.fromISO(e3, opts);
             endIsValid = end.isValid;
           } catch (e4) {
             endIsValid = false;
@@ -29011,7 +29011,7 @@ var require_luxon = __commonJS({
         if (zone === void 0) {
           zone = Settings.defaultZone;
         }
-        var proto = DateTime2.now().setZone(zone).set({
+        var proto = DateTime4.now().setZone(zone).set({
           month: 12
         });
         return !zone.isUniversal && proto.offset !== proto.set({
@@ -29544,7 +29544,7 @@ var require_luxon = __commonJS({
     var dummyDateTimeCache = null;
     function getDummyDateTime() {
       if (!dummyDateTimeCache) {
-        dummyDateTimeCache = DateTime2.fromMillis(1555555555555);
+        dummyDateTimeCache = DateTime4.fromMillis(1555555555555);
       }
       return dummyDateTimeCache;
     }
@@ -29745,7 +29745,7 @@ var require_luxon = __commonJS({
         loc: inst.loc,
         invalid: inst.invalid
       };
-      return new DateTime2(_extends({}, current, alts, {
+      return new DateTime4(_extends({}, current, alts, {
         old: current
       }));
     }
@@ -29807,13 +29807,13 @@ var require_luxon = __commonJS({
     function parseDataToDateTime(parsed, parsedZone, opts, format, text, specificOffset) {
       var setZone = opts.setZone, zone = opts.zone;
       if (parsed && Object.keys(parsed).length !== 0) {
-        var interpretationZone = parsedZone || zone, inst = DateTime2.fromObject(parsed, _extends({}, opts, {
+        var interpretationZone = parsedZone || zone, inst = DateTime4.fromObject(parsed, _extends({}, opts, {
           zone: interpretationZone,
           specificOffset
         }));
         return setZone ? inst : inst.setZone(zone);
       } else {
-        return DateTime2.invalid(new Invalid("unparsable", 'the input "' + text + `" can't be parsed as ` + format));
+        return DateTime4.invalid(new Invalid("unparsable", 'the input "' + text + `" can't be parsed as ` + format));
       }
     }
     function toTechFormat(dt, format, allowZ) {
@@ -29946,7 +29946,7 @@ var require_luxon = __commonJS({
         }
         var invalid = hasInvalidGregorianData(obj) || hasInvalidTimeData(obj);
         if (invalid) {
-          return DateTime2.invalid(invalid);
+          return DateTime4.invalid(invalid);
         }
         var offsetProvis = zone.offset(tsNow);
         var _objToTS = objToTS(obj, offsetProvis, zone);
@@ -29955,7 +29955,7 @@ var require_luxon = __commonJS({
       } else {
         ts = tsNow;
       }
-      return new DateTime2({
+      return new DateTime4({
         ts,
         zone,
         loc,
@@ -29999,8 +29999,8 @@ var require_luxon = __commonJS({
       }
       return [opts, args];
     }
-    var DateTime2 = /* @__PURE__ */ function() {
-      function DateTime3(config2) {
+    var DateTime4 = /* @__PURE__ */ function() {
+      function DateTime5(config2) {
         var zone = config2.zone || Settings.defaultZone;
         var invalid = config2.invalid || (Number.isNaN(config2.ts) ? new Invalid("invalid input") : null) || (!zone.isValid ? unsupportedZone(zone) : null);
         this.ts = isUndefined(config2.ts) ? Settings.now() : config2.ts;
@@ -30027,10 +30027,10 @@ var require_luxon = __commonJS({
         this.o = o2;
         this.isLuxonDateTime = true;
       }
-      DateTime3.now = function now2() {
-        return new DateTime3({});
+      DateTime5.now = function now2() {
+        return new DateTime5({});
       };
-      DateTime3.local = function local() {
+      DateTime5.local = function local() {
         var _lastOpts = lastOpts(arguments), opts = _lastOpts[0], args = _lastOpts[1], year = args[0], month = args[1], day = args[2], hour = args[3], minute = args[4], second = args[5], millisecond = args[6];
         return quickDT({
           year,
@@ -30042,7 +30042,7 @@ var require_luxon = __commonJS({
           millisecond
         }, opts);
       };
-      DateTime3.utc = function utc() {
+      DateTime5.utc = function utc() {
         var _lastOpts2 = lastOpts(arguments), opts = _lastOpts2[0], args = _lastOpts2[1], year = args[0], month = args[1], day = args[2], hour = args[3], minute = args[4], second = args[5], millisecond = args[6];
         opts.zone = FixedOffsetZone.utcInstance;
         return quickDT({
@@ -30055,62 +30055,62 @@ var require_luxon = __commonJS({
           millisecond
         }, opts);
       };
-      DateTime3.fromJSDate = function fromJSDate(date, options) {
+      DateTime5.fromJSDate = function fromJSDate(date, options) {
         if (options === void 0) {
           options = {};
         }
         var ts = isDate(date) ? date.valueOf() : NaN;
         if (Number.isNaN(ts)) {
-          return DateTime3.invalid("invalid input");
+          return DateTime5.invalid("invalid input");
         }
         var zoneToUse = normalizeZone(options.zone, Settings.defaultZone);
         if (!zoneToUse.isValid) {
-          return DateTime3.invalid(unsupportedZone(zoneToUse));
+          return DateTime5.invalid(unsupportedZone(zoneToUse));
         }
-        return new DateTime3({
+        return new DateTime5({
           ts,
           zone: zoneToUse,
           loc: Locale.fromObject(options)
         });
       };
-      DateTime3.fromMillis = function fromMillis(milliseconds, options) {
+      DateTime5.fromMillis = function fromMillis(milliseconds, options) {
         if (options === void 0) {
           options = {};
         }
         if (!isNumber(milliseconds)) {
           throw new InvalidArgumentError("fromMillis requires a numerical input, but received a " + typeof milliseconds + " with value " + milliseconds);
         } else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) {
-          return DateTime3.invalid("Timestamp out of range");
+          return DateTime5.invalid("Timestamp out of range");
         } else {
-          return new DateTime3({
+          return new DateTime5({
             ts: milliseconds,
             zone: normalizeZone(options.zone, Settings.defaultZone),
             loc: Locale.fromObject(options)
           });
         }
       };
-      DateTime3.fromSeconds = function fromSeconds(seconds, options) {
+      DateTime5.fromSeconds = function fromSeconds(seconds, options) {
         if (options === void 0) {
           options = {};
         }
         if (!isNumber(seconds)) {
           throw new InvalidArgumentError("fromSeconds requires a numerical input");
         } else {
-          return new DateTime3({
+          return new DateTime5({
             ts: seconds * 1e3,
             zone: normalizeZone(options.zone, Settings.defaultZone),
             loc: Locale.fromObject(options)
           });
         }
       };
-      DateTime3.fromObject = function fromObject(obj, opts) {
+      DateTime5.fromObject = function fromObject(obj, opts) {
         if (opts === void 0) {
           opts = {};
         }
         obj = obj || {};
         var zoneToUse = normalizeZone(opts.zone, Settings.defaultZone);
         if (!zoneToUse.isValid) {
-          return DateTime3.invalid(unsupportedZone(zoneToUse));
+          return DateTime5.invalid(unsupportedZone(zoneToUse));
         }
         var tsNow = Settings.now(), offsetProvis = !isUndefined(opts.specificOffset) ? opts.specificOffset : zoneToUse.offset(tsNow), normalized = normalizeObject(obj, normalizeUnit), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber, loc = Locale.fromObject(opts);
         if ((containsGregor || containsOrdinal) && definiteWeekDef) {
@@ -30147,41 +30147,41 @@ var require_luxon = __commonJS({
         }
         var higherOrderInvalid = useWeekData ? hasInvalidWeekData(normalized) : containsOrdinal ? hasInvalidOrdinalData(normalized) : hasInvalidGregorianData(normalized), invalid = higherOrderInvalid || hasInvalidTimeData(normalized);
         if (invalid) {
-          return DateTime3.invalid(invalid);
+          return DateTime5.invalid(invalid);
         }
-        var gregorian = useWeekData ? weekToGregorian(normalized) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, _objToTS2 = objToTS(gregorian, offsetProvis, zoneToUse), tsFinal = _objToTS2[0], offsetFinal = _objToTS2[1], inst = new DateTime3({
+        var gregorian = useWeekData ? weekToGregorian(normalized) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, _objToTS2 = objToTS(gregorian, offsetProvis, zoneToUse), tsFinal = _objToTS2[0], offsetFinal = _objToTS2[1], inst = new DateTime5({
           ts: tsFinal,
           zone: zoneToUse,
           o: offsetFinal,
           loc
         });
         if (normalized.weekday && containsGregor && obj.weekday !== inst.weekday) {
-          return DateTime3.invalid("mismatched weekday", "you can't specify both a weekday of " + normalized.weekday + " and a date of " + inst.toISO());
+          return DateTime5.invalid("mismatched weekday", "you can't specify both a weekday of " + normalized.weekday + " and a date of " + inst.toISO());
         }
         return inst;
       };
-      DateTime3.fromISO = function fromISO(text, opts) {
+      DateTime5.fromISO = function fromISO(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseISODate = parseISODate(text), vals = _parseISODate[0], parsedZone = _parseISODate[1];
         return parseDataToDateTime(vals, parsedZone, opts, "ISO 8601", text);
       };
-      DateTime3.fromRFC2822 = function fromRFC2822(text, opts) {
+      DateTime5.fromRFC2822 = function fromRFC2822(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseRFC2822Date = parseRFC2822Date(text), vals = _parseRFC2822Date[0], parsedZone = _parseRFC2822Date[1];
         return parseDataToDateTime(vals, parsedZone, opts, "RFC 2822", text);
       };
-      DateTime3.fromHTTP = function fromHTTP(text, opts) {
+      DateTime5.fromHTTP = function fromHTTP(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseHTTPDate = parseHTTPDate(text), vals = _parseHTTPDate[0], parsedZone = _parseHTTPDate[1];
         return parseDataToDateTime(vals, parsedZone, opts, "HTTP", opts);
       };
-      DateTime3.fromFormat = function fromFormat(text, fmt, opts) {
+      DateTime5.fromFormat = function fromFormat(text, fmt, opts) {
         if (opts === void 0) {
           opts = {};
         }
@@ -30194,25 +30194,25 @@ var require_luxon = __commonJS({
           defaultToEN: true
         }), _parseFromTokens = parseFromTokens(localeToUse, text, fmt), vals = _parseFromTokens[0], parsedZone = _parseFromTokens[1], specificOffset = _parseFromTokens[2], invalid = _parseFromTokens[3];
         if (invalid) {
-          return DateTime3.invalid(invalid);
+          return DateTime5.invalid(invalid);
         } else {
           return parseDataToDateTime(vals, parsedZone, opts, "format " + fmt, text, specificOffset);
         }
       };
-      DateTime3.fromString = function fromString(text, fmt, opts) {
+      DateTime5.fromString = function fromString(text, fmt, opts) {
         if (opts === void 0) {
           opts = {};
         }
-        return DateTime3.fromFormat(text, fmt, opts);
+        return DateTime5.fromFormat(text, fmt, opts);
       };
-      DateTime3.fromSQL = function fromSQL(text, opts) {
+      DateTime5.fromSQL = function fromSQL(text, opts) {
         if (opts === void 0) {
           opts = {};
         }
         var _parseSQL = parseSQL(text), vals = _parseSQL[0], parsedZone = _parseSQL[1];
         return parseDataToDateTime(vals, parsedZone, opts, "SQL", text);
       };
-      DateTime3.invalid = function invalid(reason, explanation) {
+      DateTime5.invalid = function invalid(reason, explanation) {
         if (explanation === void 0) {
           explanation = null;
         }
@@ -30223,15 +30223,15 @@ var require_luxon = __commonJS({
         if (Settings.throwOnInvalid) {
           throw new InvalidDateTimeError(invalid2);
         } else {
-          return new DateTime3({
+          return new DateTime5({
             invalid: invalid2
           });
         }
       };
-      DateTime3.isDateTime = function isDateTime(o2) {
+      DateTime5.isDateTime = function isDateTime(o2) {
         return o2 && o2.isLuxonDateTime || false;
       };
-      var _proto = DateTime3.prototype;
+      var _proto = DateTime5.prototype;
       _proto.get = function get(unit) {
         return this[unit];
       };
@@ -30264,7 +30264,7 @@ var require_luxon = __commonJS({
         if (zone.equals(this.zone)) {
           return this;
         } else if (!zone.isValid) {
-          return DateTime3.invalid(unsupportedZone(zone));
+          return DateTime5.invalid(unsupportedZone(zone));
         } else {
           var newTS = this.ts;
           if (keepLocalTime || keepCalendarTime) {
@@ -30516,7 +30516,7 @@ var require_luxon = __commonJS({
         if (opts === void 0) {
           opts = {};
         }
-        return this.diff(DateTime3.now(), unit, opts);
+        return this.diff(DateTime5.now(), unit, opts);
       };
       _proto.until = function until(otherDateTime) {
         return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
@@ -30539,7 +30539,7 @@ var require_luxon = __commonJS({
         }
         if (!this.isValid)
           return null;
-        var base = options.base || DateTime3.fromObject({}, {
+        var base = options.base || DateTime5.fromObject({}, {
           zone: this.zone
         }), padding = options.padding ? this < base ? -options.padding : options.padding : 0;
         var units = ["years", "months", "days", "hours", "minutes", "seconds"];
@@ -30560,7 +30560,7 @@ var require_luxon = __commonJS({
         }
         if (!this.isValid)
           return null;
-        return diffRelative(options.base || DateTime3.fromObject({}, {
+        return diffRelative(options.base || DateTime5.fromObject({}, {
           zone: this.zone
         }), this, _extends({}, options, {
           numeric: "auto",
@@ -30568,29 +30568,29 @@ var require_luxon = __commonJS({
           calendary: true
         }));
       };
-      DateTime3.min = function min() {
+      DateTime5.min = function min() {
         for (var _len = arguments.length, dateTimes = new Array(_len), _key = 0; _key < _len; _key++) {
           dateTimes[_key] = arguments[_key];
         }
-        if (!dateTimes.every(DateTime3.isDateTime)) {
+        if (!dateTimes.every(DateTime5.isDateTime)) {
           throw new InvalidArgumentError("min requires all arguments be DateTimes");
         }
         return bestBy(dateTimes, function(i3) {
           return i3.valueOf();
         }, Math.min);
       };
-      DateTime3.max = function max() {
+      DateTime5.max = function max() {
         for (var _len2 = arguments.length, dateTimes = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
           dateTimes[_key2] = arguments[_key2];
         }
-        if (!dateTimes.every(DateTime3.isDateTime)) {
+        if (!dateTimes.every(DateTime5.isDateTime)) {
           throw new InvalidArgumentError("max requires all arguments be DateTimes");
         }
         return bestBy(dateTimes, function(i3) {
           return i3.valueOf();
         }, Math.max);
       };
-      DateTime3.fromFormatExplain = function fromFormatExplain(text, fmt, options) {
+      DateTime5.fromFormatExplain = function fromFormatExplain(text, fmt, options) {
         if (options === void 0) {
           options = {};
         }
@@ -30601,13 +30601,13 @@ var require_luxon = __commonJS({
         });
         return explainFromTokens(localeToUse, text, fmt);
       };
-      DateTime3.fromStringExplain = function fromStringExplain(text, fmt, options) {
+      DateTime5.fromStringExplain = function fromStringExplain(text, fmt, options) {
         if (options === void 0) {
           options = {};
         }
-        return DateTime3.fromFormatExplain(text, fmt, options);
+        return DateTime5.fromFormatExplain(text, fmt, options);
       };
-      _createClass(DateTime3, [{
+      _createClass(DateTime5, [{
         key: "isValid",
         get: function get() {
           return this.invalid === null;
@@ -30913,21 +30913,21 @@ var require_luxon = __commonJS({
           return DATETIME_HUGE_WITH_SECONDS;
         }
       }]);
-      return DateTime3;
+      return DateTime5;
     }();
     function friendlyDateTime(dateTimeish) {
-      if (DateTime2.isDateTime(dateTimeish)) {
+      if (DateTime4.isDateTime(dateTimeish)) {
         return dateTimeish;
       } else if (dateTimeish && dateTimeish.valueOf && isNumber(dateTimeish.valueOf())) {
-        return DateTime2.fromJSDate(dateTimeish);
+        return DateTime4.fromJSDate(dateTimeish);
       } else if (dateTimeish && typeof dateTimeish === "object") {
-        return DateTime2.fromObject(dateTimeish);
+        return DateTime4.fromObject(dateTimeish);
       } else {
         throw new InvalidArgumentError("Unknown datetime argument: " + dateTimeish + ", of type " + typeof dateTimeish);
       }
     }
     var VERSION = "2.3.1";
-    exports.DateTime = DateTime2;
+    exports.DateTime = DateTime4;
     exports.Duration = Duration2;
     exports.FixedOffsetZone = FixedOffsetZone;
     exports.IANAZone = IANAZone;
@@ -52075,7 +52075,8 @@ function renderCalendar(containerEl, eventSources, settings) {
     select,
     modifyEvent,
     eventMouseEnter,
-    openContextMenuForEvent
+    openContextMenuForEvent,
+    toggleTask
   } = settings || {};
   const modifyEventCallback = modifyEvent && ((_0) => __async(this, [_0], function* ({
     event,
@@ -52146,11 +52147,35 @@ function renderCalendar(containerEl, eventSources, settings) {
     eventDrop: modifyEventCallback,
     eventResize: modifyEventCallback,
     eventMouseEnter,
-    eventDidMount: ({ event, el }) => {
+    eventDidMount: ({ event, el, textColor }) => {
       el.addEventListener("contextmenu", (e3) => {
         e3.preventDefault();
         openContextMenuForEvent && openContextMenuForEvent(event, e3);
       });
+      if (toggleTask) {
+        if (event.extendedProps.isTask) {
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = event.extendedProps.taskCompleted !== false;
+          checkbox.onclick = (e3) => {
+            e3.stopPropagation();
+            if (e3.target) {
+              toggleTask(event, e3.target.checked);
+            }
+          };
+          if (textColor == "black") {
+            checkbox.addClass("ofc-checkbox-black");
+          } else {
+            checkbox.addClass("ofc-checkbox-white");
+          }
+          if (checkbox.checked) {
+            el.addClass("ofc-task-completed");
+          }
+          const container = el.querySelector(".fc-event-time") || el.querySelector(".fc-event-title") || el.querySelector(".fc-list-event-title");
+          container == null ? void 0 : container.addClass("ofc-has-checkbox");
+          container == null ? void 0 : container.prepend(checkbox);
+        }
+      }
     },
     longPressDelay: 250
   }));
@@ -52164,6 +52189,7 @@ var React2 = __toModule(require_react());
 var ReactDOM = __toModule(require_react_dom());
 
 // src/components/EditEvent.tsx
+var import_luxon = __toModule(require_luxon());
 var React = __toModule(require_react());
 var import_react = __toModule(require_react());
 function makeChangeListener(setState, fromString) {
@@ -52230,6 +52256,8 @@ var EditEvent = ({
   const [daysOfWeek, setDaysOfWeek] = (0, import_react.useState)(((initialEvent == null ? void 0 : initialEvent.type) === "recurring" ? initialEvent.daysOfWeek : []) || []);
   const [allDay, setAllDay] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.allDay) || false);
   const [calendarIndex, setCalendarIndex] = (0, import_react.useState)(defaultCalendarIndex);
+  const [complete, setComplete] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.type) === "single" && initialEvent.completed !== null && initialEvent.completed !== void 0 ? initialEvent.completed : false);
+  const [isTask, setIsTask] = (0, import_react.useState)((initialEvent == null ? void 0 : initialEvent.type) === "single" && initialEvent.completed !== void 0 && initialEvent.completed !== null);
   const titleRef = (0, import_react.useRef)(null);
   (0, import_react.useEffect)(() => {
     if (titleRef.current) {
@@ -52245,7 +52273,8 @@ var EditEvent = ({
       endRecur: endRecur || void 0
     } : {
       date,
-      endDate
+      endDate,
+      completed: isTask ? complete : null
     }), calendarIndex);
   });
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", {
@@ -52314,7 +52343,23 @@ var EditEvent = ({
     id: "endDate",
     value: endRecur,
     onChange: makeChangeListener(setEndRecur, (x3) => x3)
-  }))), /* @__PURE__ */ React.createElement("p", {
+  }))), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("label", {
+    htmlFor: "task"
+  }, "Task Event "), /* @__PURE__ */ React.createElement("input", {
+    id: "task",
+    checked: isTask,
+    onChange: (e3) => {
+      setIsTask(e3.target.checked);
+    },
+    type: "checkbox"
+  })), isTask && /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("label", {
+    htmlFor: "taskStatus"
+  }, "Complete? "), /* @__PURE__ */ React.createElement("input", {
+    id: "taskStatus",
+    checked: !(complete === false || complete === void 0),
+    onChange: (e3) => setComplete(e3.target.checked ? import_luxon.DateTime.now().toISO() : false),
+    type: "checkbox"
+  })), /* @__PURE__ */ React.createElement("p", {
     style: {
       display: "flex",
       justifyContent: "space-between",
@@ -52339,17 +52384,17 @@ var EditEvent = ({
 var import_obsidian = __toModule(require("obsidian"));
 
 // src/dateUtil.ts
-var import_luxon = __toModule(require_luxon());
+var import_luxon2 = __toModule(require_luxon());
 var parseTime = (time) => {
-  let parsed = import_luxon.DateTime.fromFormat(time, "h:mm a");
+  let parsed = import_luxon2.DateTime.fromFormat(time, "h:mm a");
   if (parsed.invalidReason) {
-    parsed = import_luxon.DateTime.fromFormat(time, "HH:mm");
+    parsed = import_luxon2.DateTime.fromFormat(time, "HH:mm");
   }
   if (parsed.invalidReason) {
     console.error(`FC: Error parsing time string '${time}': ${parsed.invalidReason}'`);
     return null;
   }
-  return import_luxon.Duration.fromISOTime(parsed.toISOTime({
+  return import_luxon2.Duration.fromISOTime(parsed.toISOTime({
     includeOffset: false,
     includePrefix: false
   }));
@@ -52370,14 +52415,14 @@ var add = (date, time) => {
   let minutes = time.minutes;
   return date.set({ hour: hours, minute: minutes });
 };
-var getTime2 = (date) => import_luxon.DateTime.fromJSDate(date).toISOTime({
+var getTime2 = (date) => import_luxon2.DateTime.fromJSDate(date).toISOTime({
   suppressMilliseconds: true,
   includeOffset: false,
   suppressSeconds: true
 });
-var getDate = (date) => import_luxon.DateTime.fromJSDate(date).toISODate();
+var getDate = (date) => import_luxon2.DateTime.fromJSDate(date).toISODate();
 var combineDateTimeStrings = (date, time) => {
-  const parsedDate = import_luxon.DateTime.fromISO(date);
+  const parsedDate = import_luxon2.DateTime.fromISO(date);
   if (parsedDate.invalidReason) {
     console.error(`FC: Error parsing time string '${date}': ${parsedDate.invalidReason}`);
     return null;
@@ -52414,7 +52459,8 @@ function parseFrontmatter(id, frontmatter) {
     event = __spreadProps(__spreadValues({}, event), {
       daysOfWeek: frontmatter.daysOfWeek.map((c3) => DAYS.indexOf(c3)),
       startRecur: frontmatter.startRecur,
-      endRecur: frontmatter.endRecur
+      endRecur: frontmatter.endRecur,
+      extendedProps: { isTask: false }
     });
     if (!frontmatter.allDay) {
       event = __spreadProps(__spreadValues({}, event), {
@@ -52437,12 +52483,20 @@ function parseFrontmatter(id, frontmatter) {
       }
       event = __spreadProps(__spreadValues({}, event), {
         start,
-        end
+        end,
+        extendedProps: {
+          isTask: frontmatter.completed !== void 0 && frontmatter.completed !== null,
+          taskCompleted: frontmatter.completed
+        }
       });
     } else {
       event = __spreadProps(__spreadValues({}, event), {
         start: frontmatter.date,
-        end: frontmatter.endDate || void 0
+        end: frontmatter.endDate || void 0,
+        extendedProps: {
+          isTask: frontmatter.completed !== void 0 && frontmatter.completed !== null,
+          taskCompleted: frontmatter.completed
+        }
       });
     }
   }
@@ -52463,10 +52517,12 @@ function eventApiToFrontmatter(event) {
     daysOfWeek: event.extendedProps.daysOfWeek.map((i3) => DAYS[i3]),
     startRecur: event.extendedProps.startRecur && getDate(event.extendedProps.startRecur),
     endRecur: event.extendedProps.endRecur && getDate(event.extendedProps.endRecur)
-  } : __spreadValues({
+  } : __spreadProps(__spreadValues({
     type: "single",
     date: startDate
-  }, startDate !== endDate ? { endDate } : {}));
+  }, startDate !== endDate ? { endDate } : {}), {
+    completed: event.extendedProps.taskCompleted
+  }));
 }
 var FRONTMATTER_SEPARATOR = "---";
 function hasFrontmatter(page) {
@@ -52548,7 +52604,7 @@ function getColors(color) {
     if (m2) {
       const r3 = parseInt(m2[0], 16), g3 = parseInt(m2[1], 16), b3 = parseInt(m2[2], 16);
       const brightness = (r3 * 299 + g3 * 587 + b3 * 114) / 1e3;
-      if (brightness > 114) {
+      if (brightness > 150) {
         textVar = "black";
       }
     }
@@ -52574,6 +52630,9 @@ var _CalendarEvent = class {
     this.cache = cache;
     this.vault = vault;
     this._data = data;
+  }
+  get isTask() {
+    return this._data.type === "single" && this._data.completed !== void 0 && this._data.completed !== null;
   }
   get idForCalendar() {
     return this.PREFIX + _CalendarEvent.ID_SEPARATOR + this.identifier;
@@ -52601,6 +52660,18 @@ var EditableEvent = class extends CalendarEvent {
   }
   get editable() {
     return true;
+  }
+  setIsTask(isTask) {
+    return __async(this, null, function* () {
+      if (this._data.type !== "single") {
+        return;
+      }
+      if (isTask && (this._data.completed === void 0 || this._data.completed === null)) {
+        yield this.setData(__spreadProps(__spreadValues({}, this._data), { completed: false }));
+      } else if (!isTask) {
+        yield this.setData(__spreadProps(__spreadValues({}, this._data), { completed: null }));
+      }
+    });
   }
 };
 var LocalEvent = class extends EditableEvent {
@@ -52634,7 +52705,8 @@ function validateFrontmatter(obj) {
       title: obj.title,
       type: "single",
       date: obj.date,
-      endDate: obj.endDate
+      endDate: obj.endDate,
+      completed: obj.completed
     }, timeInfo);
   } else if (obj.type === "recurring") {
     if (obj.daysOfWeek === void 0) {
@@ -53863,6 +53935,7 @@ function renderOnboarding(app, plugin, el) {
 }
 
 // src/view.ts
+var import_luxon3 = __toModule(require_luxon());
 var FULL_CALENDAR_VIEW_TYPE = "full-calendar-view";
 var CalendarView = class extends import_obsidian8.ItemView {
   constructor(leaf, plugin) {
@@ -53962,7 +54035,19 @@ var CalendarView = class extends import_obsidian8.ItemView {
         openContextMenuForEvent: (e3, mouseEvent) => __async(this, null, function* () {
           const menu = new import_obsidian8.Menu(this.app);
           const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, e3.id);
+          if (event instanceof EditableEvent) {
+            if (!event.isTask) {
+              menu.addItem((item) => item.setTitle("Turn into task").onClick(() => __async(this, null, function* () {
+                yield event.setIsTask(true);
+              })));
+            } else {
+              menu.addItem((item) => item.setTitle("Remove checkbox").onClick(() => __async(this, null, function* () {
+                yield event.setIsTask(false);
+              })));
+            }
+          }
           if (event instanceof LocalEvent) {
+            menu.addSeparator();
             menu.addItem((item) => item.setTitle("Go to note").onClick(() => {
               let leaf = this.app.workspace.getMostRecentLeaf();
               event.openIn(leaf);
@@ -53978,6 +54063,23 @@ var CalendarView = class extends import_obsidian8.ItemView {
             });
           }
           menu.showAtMouseEvent(mouseEvent);
+        }),
+        toggleTask: (e3, isDone) => __async(this, null, function* () {
+          const event = yield eventFromCalendarId(this.app.metadataCache, this.app.vault, e3.id);
+          if (!event) {
+            return;
+          }
+          const newData = event.data;
+          if (newData.type !== "single") {
+            return;
+          }
+          if (isDone) {
+            const completionDate = import_luxon3.DateTime.now().toISO();
+            newData.completed = completionDate;
+          } else {
+            newData.completed = false;
+          }
+          event.setData(newData);
         })
       });
       this.plugin.settings.calendarSources.flatMap((s3) => s3.type === "ical" ? [s3] : []).map((s3) => new IcsSource(s3)).map((s3) => s3.toApi()).forEach((resultPromise) => resultPromise.then((result) => {
