@@ -11,12 +11,8 @@
             "id": "c0bfe75c56a76a29",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "02 journal/2022/2022-11/20221117.md",
             "collapseAll": true,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "02 journal/2022/2022-11/20221117.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,9 +107,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "02 journal/2022/2022-11/20221117.md"
-          }
+          "state": {}
         }
       },
       {
@@ -139,6 +131,7 @@
   },
   "active": "c0bfe75c56a76a29",
   "lastOpenFiles": [
+    "Screenshot 2022-11-17 at 7.51.10 AM 1.png",
     "02 journal/2022/2022-11/20221116.md",
     "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221115.md",
@@ -147,7 +140,6 @@
     "docs/03.01 peak learning/Bernoulli's Equation.md",
     "docs/03.01 peak learning/Acid-base definitions.md",
     "docs/03.02 high school/East Asian history in the period 600s-1200s.md",
-    "02 peak learning/Bacteria phylogeny.md",
-    "02 peak learning/Atomic radius.md"
+    "02 peak learning/Bacteria phylogeny.md"
   ]
 }
