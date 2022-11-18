@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/03.01 peak learning/VSEPR model.md",
+                "file": "01 inbox/kevinstry lecture 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/03.01 peak learning/VSEPR model.md",
+                "file": "01 inbox/kevinstry lecture 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/03.01 peak learning/VSEPR model.md"
+                "file": "01 inbox/kevinstry lecture 5.md"
               }
             }
           },
@@ -188,17 +188,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "d531e5a22de71bde",
+  "active": "749e8e63e34ed975",
   "lastOpenFiles": [
+    "docs/03.01 peak learning/VSEPR model.md",
+    "02 journal/2022/2022-11/20221117.md",
     "01 inbox/kevinstry lecture 5.md",
     "01 inbox/barometer.md",
-    "02 journal/2022/2022-11/20221117.md",
     "docs/03.02 high school/Research Plan.md",
     "02 journal/2022/2022-11/20221116.md",
     "conflict-files-obsidian-git.md",
     "01 inbox/manometer.md",
     "docs/03.01 peak learning/Pressure.md",
-    "01 inbox/2021 Fall AMC 10A.md",
-    "01 inbox/markov random field.md"
+    "01 inbox/2021 Fall AMC 10A.md"
   ]
 }
