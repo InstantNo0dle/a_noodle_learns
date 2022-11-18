@@ -83,6 +83,14 @@
             }
           },
           {
+            "id": "7852e5e83ca66a6e",
+            "type": "leaf",
+            "state": {
+              "type": "make-file-view",
+              "state": {}
+            }
+          },
+          {
             "id": "3faa7a83b598b270",
             "type": "leaf",
             "state": {
@@ -90,12 +98,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 249,
-    "collapsed": true
+    "width": 249
   },
   "right": {
     "id": "1dcad5ebddcfc02e",
@@ -179,7 +187,7 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "6d3fa1454f648509",
+  "active": "7852e5e83ca66a6e",
   "lastOpenFiles": [
     "02 journal/2022/2022-11/20221116.md",
     "02 journal/2022/2022-11/20221117.md",
