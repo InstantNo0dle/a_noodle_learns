@@ -1,5 +1,6 @@
-date: 2022-11-17
-tags: #chemistry #kevinstry #tofinish 
+date:: 2022-11-17
+tags:: #chemistry/kevinstry 
+priority:: 7
 #  lecture 5: equilibrium
 ## Phyisical equilibria
 This is concerned with phase changes.

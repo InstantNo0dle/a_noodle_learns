@@ -1,10 +1,17 @@
-time: <%tp.file.creation_date('HH:mm')%>
+time:: <%tp.file.creation_date('HH:mm')%>
 
 # <% tp.date.now('YYYY-MM-DD') %>
 
 >[!note]+ daily highlight
 >
 
+## notes to review
+```dataview
+table date, tags, priority
+from "01 inbox"
+where priority
+sort priority desc
+```
 ## todo's
 ### for today
 ```tasks

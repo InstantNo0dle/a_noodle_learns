@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "01 inbox/kevinstry lecture 5 equilibrium.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -173,17 +174,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "d8224460ee1de45d",
+  "active": "7852e5e83ca66a6e",
   "lastOpenFiles": [
-    "01 inbox/kevinstry lecture 5 equilibrium.md",
+    "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221117.md",
-    "docs/03.03 attachments/Screenshot 2022-11-17 at 10.03.30 PM.png",
-    "docs/03.03 attachments/Screenshot 2022-11-17 at 9.30.56 PM.png",
-    "Note Name.md",
+    "01 inbox/manometer.md",
+    "01 inbox/kevinstry lecture 5 equilibrium.md",
     "01 inbox/barometer.md",
-    "docs/03.01 peak learning/VSEPR model.md",
-    "docs/03.02 high school/Research Plan.md",
-    "02 journal/2022/2022-11/20221116.md",
-    "conflict-files-obsidian-git.md"
+    "01 inbox/markov random field.md",
+    "docs/03.04 templates/atomic note.md",
+    "docs/03.01 peak learning/Alternation of generations.md",
+    "docs/03.03 attachments/Screenshot 2022-11-17 at 10.03.30 PM.png",
+    "docs/03.03 attachments/Screenshot 2022-11-17 at 9.30.56 PM.png"
   ]
 }

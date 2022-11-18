@@ -21,9 +21,9 @@ One side of the U-tube is open to the atmosphere while the other is closed.
 | system **=** atmosphere | same              |
 | system **<** atmosphere | higher on the system side|
 
-![[Screenshot 2022-11-17 at 7.51.10 AM.png]]
+![[Screenshot 2022-11-17 at 7.51.10 AM.png|175]]
 
 ## closed
 One side of the U-tube is a vacuum and the other side is connected to a closed flask (the system side). The measuring of the pressure of the system using this type of setup *doesn't* require using the **atmospheric pressure**.
 
-![[Screenshot 2022-11-17 at 7.51.29 AM.png]]
+![[Screenshot 2022-11-17 at 7.51.29 AM.png|175]]

@@ -23,5 +23,6 @@
   "obsidian-git",
   "make-md",
   "obsidian-latex-suite",
-  "dataview"
+  "dataview",
+  "mousewheel-image-zoom"
 ]
