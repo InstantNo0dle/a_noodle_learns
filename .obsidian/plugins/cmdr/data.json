@@ -4,7 +4,38 @@
   "debug": false,
   "editorMenu": [],
   "fileMenu": [],
-  "leftRibbon": [],
+  "leftRibbon": [
+    {
+      "id": "daily-notes",
+      "icon": "lucide-calendar-days",
+      "name": "Daily notes: Open today's daily note",
+      "mode": "any"
+    },
+    {
+      "id": "graph:open",
+      "icon": "lucide-git-fork",
+      "name": "Graph view: Open graph view",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-spaced-repetition:srs-review-flashcards",
+      "icon": "box",
+      "name": "Spaced Repetition: Review flashcards from all notes",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:pull",
+      "icon": "git-pull-request",
+      "name": "Obsidian Git: Pull",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push2",
+      "icon": "git-commit",
+      "name": "Obsidian Git: Push",
+      "mode": "any"
+    }
+  ],
   "rightRibbon": [],
   "titleBar": [],
   "statusBar": [],
@@ -18,7 +49,13 @@
       "Open Full Calendar",
       "Advanced Tables Toolbar",
       "New Excalidraw drawing",
-      "Insert template"
+      "Insert template",
+      "Open quick switcher",
+      "Open graph view",
+      "Open today's daily note",
+      "Generate flashcards",
+      "Review flashcards",
+      "Templater"
     ]
   },
   "spacing": 8,
