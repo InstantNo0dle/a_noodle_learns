@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
+                "file": "02 journal/2022/2022-11/20221118.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
+                "file": "02 journal/2022/2022-11/20221118.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md",
+                "file": "02 journal/2022/2022-11/20221118.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 journal/2022/2022-11/20221117.md"
+                "file": "02 journal/2022/2022-11/20221118.md"
               }
             }
           },
@@ -176,15 +176,15 @@
   },
   "active": "d8224460ee1de45d",
   "lastOpenFiles": [
-    "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221117.md",
-    "01 inbox/manometer.md",
+    "02 journal/2022/2022-11/20221118.md",
     "01 inbox/kevinstry lecture 5 equilibrium.md",
+    "docs/03.04 templates/daily.md",
+    "01 inbox/manometer.md",
     "01 inbox/barometer.md",
     "01 inbox/markov random field.md",
     "docs/03.04 templates/atomic note.md",
     "docs/03.01 peak learning/Alternation of generations.md",
-    "docs/03.03 attachments/Screenshot 2022-11-17 at 10.03.30 PM.png",
-    "docs/03.03 attachments/Screenshot 2022-11-17 at 9.30.56 PM.png"
+    "docs/03.03 attachments/Screenshot 2022-11-17 at 10.03.30 PM.png"
   ]
 }
