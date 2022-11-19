@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Prism",
+  "cssTheme": "Origami",
   "theme": "moonstone",
   "baseFontSize": 16,
-  "accentColor": "#9c84db",
+  "accentColor": "#ab8a70",
   "textFontFamily": "",
   "interfaceFontFamily": "",
   "enabledCssSnippets": [

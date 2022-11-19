@@ -5,11 +5,11 @@
     "fontSize": 17,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📔",
       "🌱",
       "🌻",
       "📎",
-      "🤗",
-      "📥"
+      "🤗"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -27,16 +27,16 @@
   "05 life": "RiTimerFlashLine",
   "templates": "RiAddCircleFill",
   "attachments": "RiStickyNoteFill",
-  "02 journal": "✏",
+  "02 journal": "📔",
   "03 life": "🤗",
   "docs": "📎",
   "docs/03.01 peak learning": "🌻",
   "docs/03.02 high school": "🌱",
-  "docs/03.03 attachments": {
+  "docs/03.04 templates": {
     "iconName": null,
     "inheritanceIcon": "📎"
   },
-  "docs/03.04 templates": {
+  "docs/03.03 attachments": {
     "iconName": null,
     "inheritanceIcon": "📎"
   }

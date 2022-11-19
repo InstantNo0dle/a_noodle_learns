@@ -37,5 +37,33 @@ priority:: 4
 - **Wordline**: *curve* in spacetime
 	- Parameterized set of events
 	- Describes an object’s motion in spacetime
-	- Light rays always have a worldline with a slope of 1
-		- $$
+	- **Light rays** always have a worldline with a slope of 1 or -1 ($\frac{\Delta x}{c \Delta t}$)
+		- ![[Screenshot 2022-11-19 at 11.04.35 AM.png|450]]
+		- Worldline would be preserved under [[lorentz boosts]]
+		- In reality, you can’t have a worldline with a slope *less* than 1 because that would mean the object travels faster than light
+- Primed coordinate system on the unprimed system as axes (in the background)
+	- [[lorentz boosts]] are *very* relevant
+	- Draw the $t'$\ axis: it is a set characterized by $x’=0$
+		- $$x'=0 \implies \gamma(x-vt)=0 \implies x=vt \implies \frac{v}{c}(ct)$$
+	- $x’$ axis is characterized by $t’=0$
+		- $$t'=0 \implies \gamma\left( t-\frac{vx}{c^2} \right) = 0 \implies t= \frac{vx}{c^2} \implies ct=\frac{v}{c}x$$
+	- ![[Screenshot 2022-11-19 at 11.28.20 AM.png|400]]
+		- Effect of a boost: the coordinate axes get tilted towards each other
+	- Visualizing [[relative simultaneity]]:
+		- **Line of simultaneity** is just a line parallel to the $x$ axis passing through that time step
+		- While two events may be on the same line of simultaneity according to one observer, because the axes are tilted to another observer (one on the train, so because of boosts), they are no longer on the same line and are not simultaneous to that 
+			- ![[Screenshot 2022-11-19 at 11.35.41 AM.png|400]]
+	- Visualizing [[length contraction]]: UNFINISHED
+		- Plot the light ray worldline as defined above
+		- When $t’, x’$ are both 0, the axes are lined up
+			- Event A: light ray is emitted from the back of the train $(t', x')=(0,0)$
+			- Event B: light ray returns back to source, $(t',x')=(\Delta t',0)$
+			- Then just plot the coordinates on the respective axes
+## spacetime interval
+- **Euclidean norm** finds the distance between two points using their coordinates (well-known distance formula)
+	- $$\mid \mid$$
+- Geometry of spacetime is **Minkowskian** — distances are measured differently
+	- Given events A and B:
+		- $$\Delta s ^{2} = -c^{2}(t_{1}-t_{2})^{2} + (x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2} + (z_{1}-z_{2})^{2}$$
+		- There exists negative distances
+	- Distances are *invariant* under lorentz transformations!
