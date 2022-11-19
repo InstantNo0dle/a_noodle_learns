@@ -20,12 +20,12 @@ Don't forget the $p_0$, especially if it's an open container!!
 Measuring *atmospheric* pressure is done with a [[barometer]] while measuring *system* pressure is done with a [[manometer]].
 
 There are multiple *units* for pressure:
-- The standard pressure is (unit) ;; 1 bar exactly, denoted $P$ #flashcard 
+- The standard pressure is (unit) — 1 bar exactly, denoted $P$ #flashcard 
 <!--SR:!2022-11-22,3,250-->
-- 1 bar ;; $10^5$ atm #flashcard 
+- 1 bar — $10^5$ atm #flashcard 
 <!--SR:!2022-11-20,1,230-->
-- 1 atm ;; $\ce{101 kPa = 1.01325 * 10^5 Pa}$ #flashcard
+- 1 atm — $\ce{101 kPa = 1.01325 * 10^5 Pa}$ #flashcard
 <!--SR:!2022-11-22,3,250-->
-- 760 Torr ;; 1 atm #flashcard 
+- 760 Torr — 1 atm #flashcard 
 <!--SR:!2022-11-22,3,250-->
 - There's also the $psi$ but don't worry about that (pounds per square inch)

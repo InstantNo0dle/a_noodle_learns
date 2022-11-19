@@ -3,10 +3,11 @@
   "theme": "moonstone",
   "baseFontSize": 16,
   "accentColor": "#ab8a70",
-  "textFontFamily": "Iosevka Comfy Duo",
+  "textFontFamily": "Rubik",
   "interfaceFontFamily": "",
   "enabledCssSnippets": [
     "extended-colorschemes"
   ],
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "Iosevka Comfy Duo"
 }

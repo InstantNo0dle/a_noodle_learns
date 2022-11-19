@@ -16,7 +16,7 @@
     "randomizeCardOrder": true,
     "convertHighlightsToClozes": true,
     "convertBoldTextToClozes": false,
-    "singlelineCardSeparator": ";;",
+    "singlelineCardSeparator": "—",
     "singlelineReversedCardSeparator": ":::",
     "multilineCardSeparator": "?",
     "multilineReversedCardSeparator": "??",
@@ -45,6 +45,8 @@
     "1eadec96f753ca",
     "14f3230a451ba9",
     "168030923cdcc6",
-    "15e8d88dff0d44"
+    "15e8d88dff0d44",
+    "10ca8d379168ef",
+    "cea92a44d975d"
   ]
 }
