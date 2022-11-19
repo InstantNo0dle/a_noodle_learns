@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "01 inbox/relativity class 3.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +98,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
