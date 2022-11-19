@@ -32,6 +32,11 @@ $$
 \Delta x' = \gamma [\Delta x - v\Delta t] \\
 \end{align}
 $$
+
+^d2bf67
+
 - These are pretty intuitive:
 	- $\Delta x'$ has $\gamma$ to compensate for [[length contraction]]
 	- $\Delta t'$ : "Simultaneity of events from a distance in space"
+
+Boosts can be thought of as rotations in time.

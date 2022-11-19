@@ -37,7 +37,7 @@
   "primary-ceciliamay@@inter-alt": true,
   "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light",
   "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-mocha",
-  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-rosewater",
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-blue",
   "anuppuccin-theme-settings@@anp-layout-select": "anp-card-layout",
   "anuppuccin-theme-settings@@anp-card-shadows": true,
   "anuppuccin-theme-settings@@anp-card-layout-actions": true,
@@ -59,7 +59,6 @@
   "anuppuccin-theme-settings@@anp-callout-select": "anp-callout-sleek",
   "anuppuccin-theme-settings@@anp-callout-color-toggle": true,
   "anuppuccin-theme-settings@@anp-callout-fold-position": true,
-  "anuppuccin-theme-settings@@anp-editor-font-toggle": true,
   "anuppuccin-theme-settings@@anp-toggle-preview": true,
   "anuppuccin-theme-settings@@anp-toggle-scrollbars": true,
   "anuppuccin-theme-settings@@anp-header-color-toggle": true,
@@ -107,7 +106,7 @@
   "obsidian-prism-theme@@light-accent-color-preset": "pt-accent-color-blue-lt",
   "title@@custom-page-header": false,
   "title@@advanced-toolbar-mode": true,
-  "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
+  "anuppuccin-theme-settings@@anp-active-line": "anp-no-highlight",
   "sanctum@@color-accent-rgb-l": "83, 112, 159",
   "sanctum@@hide-vault-title": false,
   "sanctum@@wrap-nav-titles": true,
@@ -165,5 +164,11 @@
   "blue-topaz-theme@@toggle-calendar-shadow": true,
   "blue-topaz-theme@@style-options-for-calendar-plugin": "style-options-for-calendar-plugin-default",
   "blue-topaz-theme@@full-width-callout": false,
-  "blue-topaz-theme@@style-options-for-admonition-plugin": false
+  "blue-topaz-theme@@style-options-for-admonition-plugin": false,
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-light": false,
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-primary-light",
+  "anuppuccin-theme-settings@@anp-header-toggle": true,
+  "anuppuccin-theme-settings@@anp-editor-font-toggle": true,
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-primary-dark",
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true
 }

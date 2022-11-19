@@ -4,7 +4,6 @@
   "obsidian-day-planner",
   "obsidian-tasks-plugin",
   "obsidian-annotator",
-  "highlightr-plugin",
   "obsidian-icon-folder",
   "tag-wrangler",
   "obsidian-hider",
@@ -24,5 +23,6 @@
   "obsidian-latex-suite",
   "dataview",
   "mousewheel-image-zoom",
-  "calendar"
+  "calendar",
+  "obsidian-smart-typography"
 ]

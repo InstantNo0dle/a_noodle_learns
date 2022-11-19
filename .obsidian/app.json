@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "docs/03.03 attachments",
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
   "defaultViewMode": "preview",

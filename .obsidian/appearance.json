@@ -1,8 +1,12 @@
 {
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "Prism",
   "theme": "moonstone",
   "baseFontSize": 16,
   "accentColor": "#9c84db",
   "textFontFamily": "",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "extended-colorschemes"
+  ],
+  "baseFontSizeAction": false
 }
