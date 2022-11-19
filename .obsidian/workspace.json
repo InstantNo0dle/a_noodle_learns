@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "a11a1811683c3402",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/03.04 templates/daily.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1701cf91217abeec",
             "type": "leaf",
             "state": {
@@ -30,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b93e7248caee5fbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/03.01 peak learning/lorentz boosts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249,
-    "collapsed": true
+    "width": 249
   },
   "right": {
     "id": "1dcad5ebddcfc02e",
@@ -188,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -197,15 +196,15 @@
   },
   "active": "1701cf91217abeec",
   "lastOpenFiles": [
+    "docs/03.04 templates/daily.md",
     "02 journal/2022/2022-11/20221119.md",
-    "docs/03.01 peak learning/lorentz boosts.md",
+    "01 inbox/20221120.md",
     "01 inbox/relativity class 3.md",
+    "docs/03.01 peak learning/lorentz boosts.md",
     "docs/03.01 peak learning/effects of special relativity.md",
     "docs/03.01 peak learning/gallilean boosts.md",
     "01 inbox/kevinstry lecture 5 equilibrium.md",
     "01 inbox/boyle's law.md",
-    "02 journal/2022/2022-11/20221117.md",
-    "02 journal/2022/2022-11/20221118.md",
-    "02 journal/2022/2022-11/20221114.md"
+    "02 journal/2022/2022-11/20221117.md"
   ]
 }

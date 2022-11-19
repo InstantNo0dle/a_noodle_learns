@@ -1,5 +1,5 @@
 time:: <%tp.file.creation_date('HH:mm')%>
-<<[[<% tp.date.now('YYYYMMDD', -1) %>]] | [[<% tp.date.now('YYYYMMDD', +1) %>]] >>
+« [[<% tp.date.now('YYYYMMDD', -1) %>]] | [[<% tp.date.now('YYYYMMDD', +1) %>]] »
 
 # <% tp.date.now('YYYY-MM-DD') %>
 
@@ -23,6 +23,7 @@ short mode
 hide task count
 sort by due
 ```
+- [ ] 
 ### upcoming
 ```tasks
 not done
@@ -32,6 +33,7 @@ short mode
 hide task count
 sort by due
 ```
+- [ ] 
 ## today's plan
 - [ ] 
 
