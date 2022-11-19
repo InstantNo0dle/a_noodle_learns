@@ -61,9 +61,11 @@ priority:: 4
 			- Then just plot the coordinates on the respective axes
 ## spacetime interval
 - **Euclidean norm** finds the distance between two points using their coordinates (well-known distance formula)
-	- $$\mid \mid$$
+	- $$\mid  A - B\mid = \sqrt{ (x_{1}-y_{1})^2+(x_{2}-y_{2}) }$$
 - Geometry of spacetime is **Minkowskian** — distances are measured differently
 	- Given events A and B:
 		- $$\Delta s ^{2} = -c^{2}(t_{1}-t_{2})^{2} + (x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2} + (z_{1}-z_{2})^{2}$$
 		- There exists negative distances
+		- Basically just euclidian norm but have time part multiplied by $-c^2$
+		- and yes, $\Delta s^2$ is the spacetime interval
 	- Distances are *invariant* under lorentz transformations!
