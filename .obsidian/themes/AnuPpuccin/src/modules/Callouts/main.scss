@@ -1,0 +1,139 @@
+/*----------------CALLOUTS-------------------*/
+.anp-callout-fold-position {
+  --anp-callout-fold-position: 1;
+}
+.anp-callout-toggle.anp-callout-sleek {
+  &:not(.anp-callout-normal-toggle) {
+    .callout:not(.is-collapsible) {
+      padding: 0px;
+      .callout-content {
+        padding: 0 var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding);
+      }
+      .callout-title {
+        background-color: rgba(var(--callout-color), 0.0.5);
+        padding: var(--callout-title-padding);
+        cursor: pointer;
+        .callout-title-inner {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &.anp-callout-normal-toggle {
+    .callout:not(.is-collapsible) {
+      border-color: rgba(var(--callout-color), 0.4);
+      border-width: 1px;
+      border-radius: var(--callout-radius);
+      background-color: rgba(var(--ctp-mantle), 0.4);
+    }
+    .callout-content {
+      padding: var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding) calc(var(--callout-title-padding)*1.5);
+      border-top: 1px dashed rgba(var(--callout-color), 0.4);
+    }
+    .callout-fold {
+      padding-right: 0px;
+    }
+    .callout-title-inner {
+      flex-grow: var(--anp-callout-fold-position, unset);
+    }
+  }
+  .callout {
+    &.is-collapsible {
+      .callout-fold {
+        padding-right: 0px;
+      }
+      .callout-title-inner {
+        flex-grow: var(--anp-callout-fold-position, unset);
+      }
+      border-color: rgba(var(--callout-color), 0.4);
+      border-width: 1px;
+      border-radius: var(--callout-radius);
+      background-color: rgba(var(--ctp-mantle), 0.4);
+      --bold-weight: bolder;
+      &.is-collapsed {
+        padding: 0;
+        .callout-title {
+          background-color: rgba(var(--callout-color), 0.1);
+          padding: var(--callout-title-padding);
+          cursor: pointer;
+        }
+        .callout-content {
+          display: none;
+        }
+      }
+      &:not(.is-collapsed) {
+        padding: 0px 0px var(--callout-title-padding) 0px;
+        .callout-title {
+          background-color: rgba(var(--callout-color), 0.1);
+          padding: var(--callout-title-padding);
+          border-color: rgba(var(--callout-color), 0.4);
+          cursor: pointer;
+        }
+        .callout-content {
+          padding: var(--callout-title-padding) var(--callout-title-padding) 0 calc(var(--callout-title-padding)*1.5);
+          border-top: 1px dashed rgba(var(--callout-color), 0.4);
+        }
+      }
+    }
+    &:not(.is-collapsible) {
+      padding: 0px;
+      .callout-title {
+        background-color: rgba(var(--callout-color), 0.1);
+        padding: var(--callout-title-padding) 0px var(--callout-title-padding) var(--callout-title-padding);
+        border-color: rgba(var(--callout-color), 0.4);
+      }
+    }
+    .list-collapse-indicator {
+      margin-left: -35px;
+      padding-right: 3px;
+    }
+  }
+}
+.callout-title-inner {
+  flex-grow: 1;
+}
+.anp-callout-toggle.anp-callout-block {
+  .callout {
+    border-left: 4px solid rgb(var(--callout-color));
+    --callout-radius: 0px;
+  }
+}
+.anp-callout-toggle.anp-callout-willemstad {
+  .callout {
+    border-left: 0px solid rgb(var(--callout-color));
+    transition: border-left-width 0.1s;
+    --callout-padding: 0px;
+    --callout-title-padding: var(--size-4-2) var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    --callout-content-padding: 0 var(--size-4-2) var(--size-4-2) var(--size-4-3);
+    background-color: transparent;
+    &:hover {
+      border-left-width: 4px;
+    }
+    .callout-content {
+      background-color: rgba(var(--ctp-mantle), 0.4);
+    }
+    .callout-title {
+      background-color: rgba(var(--callout-color), 0.1);
+    }
+  }
+}
+.callout {
+  --bold-color: currentColor;
+  --italic-color: currentColor;
+}
+.theme-light.anp-callout-toggle .callout-title-inner,
+.theme-light.anp-callout-toggle.anp-callout-normal-toggle .callout:not(.is-collapsible) .callout-title-inner {
+  color: var(--text-normal);
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+}
+.anp-callout-toggle .callout-content > {
+  p, ul, ol {
+    &:first-child {
+      margin-top: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

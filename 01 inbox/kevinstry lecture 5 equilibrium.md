@@ -21,6 +21,7 @@ This is concerned with phase changes.
 - Clausius Clapeyron (formula)
 	- Basically explains how vapor pressure and temperature are related
 		- Enthalpy of vaporization
+
 $$
 	\ln \frac{P_{2}}{P_{1}}= \frac{\Delta H_{vap}}{R}\left( \frac{1}{T_{2}}-\frac{1}{T_{1}} \right)
 $$

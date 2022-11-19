@@ -1,0 +1,21 @@
+/*-Highlight current line-*/
+.anp-current-line .markdown-source-view {
+  .cm-active.cm-line {
+    background-color: rgba(var(--ctp-surface1), 0.4);
+  }
+}
+.anp-current-line-border .markdown-source-view {
+  .cm-active.cm-line {
+    border-left: 2px solid var(--interactive-accent);
+    margin-left: -2px !important;
+    background-color: rgba(var(--ctp-surface1), 0.4);
+  }
+}
+/*-Custom editor font-*/
+.anp-editor-font-toggle .markdown-source-view.mod-cm6:not(.is-live-preview) .cm-scroller {
+  font-family: var(--anp-editor-font);
+}
+/*-Highlighted gutter number-*/
+.cm-lineNumbers .cm-gutterElement.cm-active {    
+  color:  var(--interactive-accent) !important;
+}

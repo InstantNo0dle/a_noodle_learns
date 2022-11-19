@@ -1,7 +1,6 @@
 [
   "obsidian-style-settings",
   "obsidian-admonition",
-  "obsidian-full-calendar",
   "obsidian-day-planner",
   "obsidian-tasks-plugin",
   "obsidian-annotator",
@@ -24,5 +23,6 @@
   "make-md",
   "obsidian-latex-suite",
   "dataview",
-  "mousewheel-image-zoom"
+  "mousewheel-image-zoom",
+  "calendar"
 ]
