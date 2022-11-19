@@ -4,19 +4,19 @@
     "flashcardGoodText": "Good",
     "flashcardHardText": "Hard",
     "flashcardTags": [
-      "#flashcards"
+      "#flashcard"
     ],
     "convertFoldersToDecks": false,
-    "cardCommentOnSameLine": false,
+    "cardCommentOnSameLine": true,
     "burySiblingCards": true,
     "showContextInCards": true,
     "flashcardHeightPercentage": 80,
     "flashcardWidthPercentage": 40,
-    "showFileNameInFileLink": false,
+    "showFileNameInFileLink": true,
     "randomizeCardOrder": true,
     "convertHighlightsToClozes": true,
     "convertBoldTextToClozes": false,
-    "singlelineCardSeparator": "::",
+    "singlelineCardSeparator": ";;",
     "singlelineReversedCardSeparator": ":::",
     "multilineCardSeparator": "?",
     "multilineReversedCardSeparator": "??",
@@ -39,6 +39,12 @@
     "maxLinkFactor": 1,
     "showDebugMessages": false
   },
-  "buryDate": "2022-11-08",
-  "buryList": []
+  "buryDate": "2022-11-19",
+  "buryList": [
+    "113e40fad3baf2",
+    "1eadec96f753ca",
+    "14f3230a451ba9",
+    "168030923cdcc6",
+    "15e8d88dff0d44"
+  ]
 }
