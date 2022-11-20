@@ -8,7 +8,7 @@ Equation — $$PV=nRT$$ #flashcard
 
 $R$ is a **universal gas constant**, the same for every gas and has multiple forms with different units.
 - R in *joules*/mole — $8.314 J \cdot mol^{-1}$ #flashcard 
-- R in *atm* — $0.8205 L \cdot atm \cdot K^{-1} \cdot mol^{-1}$ #flashcard 
+- R in *atm* — $0.08205 L \cdot atm \cdot K^{-1} \cdot mol^{-1}$ #flashcard 
 - R in *Torr* — $62.364 L \cdot Torr \cdot K^{-1} \cdot mol^{-1}$ #flashcard 
 
 Another variation that can be easily derived is the **combined gas law**.
