@@ -5,6 +5,7 @@ date:: 2022-11-20
 tags:: #chemistry/gases 
 
 # kinetic molecular theory
+
 ```ad-important
 title: theory
 collapse: open

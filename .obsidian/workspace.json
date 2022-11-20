@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "ef756153339add09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 journal/2022/2022-11/20221118.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7a9641441d8e95c8",
             "type": "leaf",
             "state": {
@@ -79,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/03.01 peak learning/Pressure.md",
+                "file": "02 journal/2022/2022-11/20221120.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/03.01 peak learning/Pressure.md",
+                "file": "02 journal/2022/2022-11/20221120.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -195,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/03.01 peak learning/Pressure.md"
+                "file": "02 journal/2022/2022-11/20221120.md"
               }
             }
           },
@@ -231,17 +218,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "858fb9a5b942d680",
+  "active": "939b91437cc84849",
   "lastOpenFiles": [
-    "01 inbox/kinetic molecular theory.md",
     "docs/03.01 peak learning/Pressure.md",
-    "01 inbox/gas laws.md",
+    "01 inbox/kinetic molecular theory.md",
     "01 inbox/law of effusion.md",
+    "02 journal/2022/2022-11/20221120.md",
+    "02 journal/2022/2022-11/20221118.md",
+    "01 inbox/gas laws.md",
     "01 inbox/Avogadro's principle.md",
     "01 inbox/ideal gas law.md",
     "01 inbox/law of partial pressures.md",
-    "01 inbox/charles's law.md",
-    "01 inbox/Dalton’s law.md",
-    "02 journal/2022/2022-11/20221118.md"
+    "01 inbox/charles's law.md"
   ]
 }

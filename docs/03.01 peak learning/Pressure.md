@@ -30,7 +30,13 @@ There are multiple *units* for pressure:
 <!--SR:!2022-11-22,3,250-->
 - There's also the $psi$ but don't worry about that (pounds per square inch)
 
-Pressure can be calculated using the [[kinetic molecular theory]]:
+Pressure can be calculated using the [[kinetic molecular theory]] — $$P=\frac{nMv_{rms}^{2}}{3V}$$ #flashcard 
+
+
+```ad-note
+title: derivation
+collapse: open
+
 1. $F=\frac{p}{\Delta t}$, so first calculate **mometum**
 	1. Each particle has a momentum $mv_{x}$ before it hits the “wall” of a container, and hitting → change in direction. $mv_{x}-(-mv_{x})=2mv_{x}$
 	2. Find number of particles that hit the “wall” in a time interval $\Delta t$
@@ -40,3 +46,9 @@ Pressure can be calculated using the [[kinetic molecular theory]]:
 	3. $p=2mv_x \times \frac{NAv_{x}\Delta t}{2V}$
 2. $F = \frac{mNAv_{x}^{2} }{V}$
 3. $P=\frac{F}{A} \implies P=\frac{mNv_{x}^{2} }{V}$
+4. Account for not all molecules moving at the same speed
+	1. Use average speed of all the molecules $\langle v_{x}^{2} \rangle$
+	2. This is in all 3 directions so $\langle v^2 \rangle = v_{rms}=3\langle v_{x}^{2}\rangle$
+	3. $P=\frac{mNv_{rms}^{2} }{3V}$
+5. Substitute $nN_A = N$ and $mN_A = M$ → $P=\frac{nMv_{rms}^{2} }{3V}$
+```
