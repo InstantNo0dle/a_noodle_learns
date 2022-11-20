@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 inbox/charles's law.md",
+                "file": "02 journal/2022/2022-11/20221120.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,6 +32,54 @@
             }
           },
           {
+            "id": "939b91437cc84849",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 inbox/gas laws.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a9641441d8e95c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 inbox/charles's law.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c7345764f4315b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 inbox/avogadro's principle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8364f9e77c23501",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 inbox/ideal gas law.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8a3138c32c8b6d5f",
             "type": "leaf",
             "state": {
@@ -43,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 inbox/boyle's law.md",
+                "file": "02 journal/2022/2022-11/20221120.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 inbox/boyle's law.md",
+                "file": "02 journal/2022/2022-11/20221120.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -159,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 inbox/boyle's law.md"
+                "file": "02 journal/2022/2022-11/20221120.md"
               }
             }
           },
@@ -195,17 +242,17 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "8a3138c32c8b6d5f",
+  "active": "d8224460ee1de45d",
   "lastOpenFiles": [
-    "docs/03.01 peak learning/Pressure.md",
-    "01 inbox/Gay-Lussac’s law.md",
-    "01 inbox/charles's law.md",
     "02 journal/2022/2022-11/20221119.md",
+    "01 inbox/Gay-Lussac’s law.md",
+    "01 inbox/avogadro's principle.md",
+    "01 inbox/ideal gas law.md",
+    "01 inbox/gas laws.md",
+    "01 inbox/charles's law.md",
+    "01 inbox/boyle's law.md",
+    "docs/03.01 peak learning/Pressure.md",
     "01 inbox/relativity class 3.md",
-    "docs/03.04 templates/daily.md",
-    "01 inbox/20221120.md",
-    "docs/03.01 peak learning/lorentz boosts.md",
-    "docs/03.01 peak learning/effects of special relativity.md",
-    "docs/03.01 peak learning/gallilean boosts.md"
+    "docs/03.04 templates/daily.md"
   ]
 }
