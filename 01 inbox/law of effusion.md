@@ -15,3 +15,6 @@ tags:: #chemistry/gases
 
 An extension of this law can be made to relate **time** of diffusion to molar mass.
 $$\ce{ Time of effusion \propto \sqrt{ M }}$$
+
+Another extension relates the rate of effusion to **temperature** — the rate of effusion increases as temperature increases, directly proportional. #flashcard 
+$$\ce{ Rate of effusion \propto \sqrt{ T } }$$

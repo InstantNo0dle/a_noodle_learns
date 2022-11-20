@@ -56,67 +56,31 @@
             }
           },
           {
-            "id": "8c7345764f4315b6",
+            "id": "cf41672ce15c03ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 inbox/Avogadro's principle.md",
+                "file": "01 inbox/kinetic molecular theory.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e8364f9e77c23501",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 inbox/ideal gas law.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8caf333dc7ddba43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 inbox/law of partial pressures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "92bffba13d450ef0",
+            "id": "858fb9a5b942d680",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "docs/03.01 peak learning/Pressure.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8a3138c32c8b6d5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 inbox/boyle's law.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -191,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 inbox/law of effusion.md",
+                "file": "docs/03.01 peak learning/Pressure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 inbox/law of effusion.md",
+                "file": "docs/03.01 peak learning/Pressure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -231,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 inbox/law of effusion.md"
+                "file": "docs/03.01 peak learning/Pressure.md"
               }
             }
           },
@@ -267,8 +231,10 @@
     "width": 274.5,
     "collapsed": true
   },
-  "active": "5de3760f7b9b7198",
+  "active": "858fb9a5b942d680",
   "lastOpenFiles": [
+    "01 inbox/kinetic molecular theory.md",
+    "docs/03.01 peak learning/Pressure.md",
     "01 inbox/gas laws.md",
     "01 inbox/law of effusion.md",
     "01 inbox/Avogadro's principle.md",
@@ -276,8 +242,6 @@
     "01 inbox/law of partial pressures.md",
     "01 inbox/charles's law.md",
     "01 inbox/Dalton’s law.md",
-    "02 journal/2022/2022-11/20221118.md",
-    "docs/03.01 peak learning/Pressure.md",
-    "02 journal/2022/2022-11/20221120.md"
+    "02 journal/2022/2022-11/20221118.md"
   ]
 }

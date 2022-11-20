@@ -16,3 +16,4 @@ Of course, thereâ€™s the [[ideal gas law]] that sums all of these equations up ð
 
 [[law of partial pressures|Dalton's law]] defines partial pressures for all gases.
 
+[[law of effusion|Graham's law of effusion]] explains how [[molar mass]] and **temperature** affect the rate of effusion (**average speed** of gas particles).
