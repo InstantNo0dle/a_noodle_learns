@@ -91,7 +91,7 @@
       "date": "Sun Nov 20 2022"
     }
   ],
-  "completePastItems": true,
+  "completePastItems": false,
   "circularProgress": true,
   "nowAndNextInStatusBar": true,
   "showTaskNotification": false,
