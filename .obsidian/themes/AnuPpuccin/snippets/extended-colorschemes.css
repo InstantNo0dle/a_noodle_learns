@@ -35,9 +35,6 @@ settings:
             label: Nord
             value: ctp-nord-light
         - 
-            label: Primary
-            value: ctp-primary-light
-        - 
             label: Solarized
             value: ctp-solarized-light
   - 
@@ -75,9 +72,6 @@ settings:
         -
             label: Nord Dark (Custom palette)
             value: ctp-nord-darker
-        -
-            label: Primary
-            value: ctp-primary-dark
         -
             label: Rosé Pine
             value: ctp-rosepine-dark
@@ -119,6 +113,7 @@ settings:
   --ctp-mantle: 30, 30, 30;
   --ctp-crust: 25, 25, 25;
   --ctp-accent: 165, 117, 98;
+  --background-modifier-border: rgb(51, 51, 51);
 }
 .theme-light.anp-theme-ext-light.ctp-nord-light {
   --ctp-rosewater: 209, 135, 112;
@@ -466,64 +461,6 @@ settings:
   --ctp-base: 10, 10, 10 !important;
   --ctp-mantle: 5, 5, 5 !important;
   --ctp-crust: 0, 0, 0 !important;
-}
-.theme-light.anp-theme-ext-light.ctp-primary-light {
-  --ctp-rosewater: 239, 186, 159;
-  --ctp-flamingo: 209, 148, 179;
-  --ctp-pink: 216, 121, 213;
-  --ctp-mauve: 141, 111, 179;
-  --ctp-red: 223, 69, 58;
-  --ctp-maroon: 223, 69, 58;
-  --ctp-peach: 235, 112, 46;
-  --ctp-yellow: 227, 173, 38;
-  --ctp-green: 66, 184, 133;
-  --ctp-teal: 66, 184, 164;
-  --ctp-sky: 66, 176, 184;
-  --ctp-sapphire: 66, 153, 184;
-  --ctp-blue: 40, 143, 195;
-  --ctp-lavender: 133, 92, 214;
-  --ctp-text: 74, 52, 28;
-  --ctp-subtext1: 101, 81, 52;
-  --ctp-subtext0: 123, 98, 66;
-  --ctp-overlay2: 130, 106, 74;
-  --ctp-overlay1: 157, 128, 98;
-  --ctp-overlay0: 182, 157, 124;
-  --ctp-surface2: 207, 182, 150;
-  --ctp-surface1: 228, 215, 196;
-  --ctp-surface0: 235, 226, 214;
-  --ctp-base: 247, 243, 238;
-  --ctp-mantle: 242, 236, 227;
-  --ctp-crust: 238, 231, 221;
-  --ctp-accent: 183, 134, 11;
-}
-.theme-dark.anp-theme-ext-dark.ctp-primary-dark {
-  --ctp-rosewater: 246, 206, 182;
-  --ctp-flamingo: 239, 195, 217;
-  --ctp-pink: 229, 179, 230;
-  --ctp-mauve: 159, 120, 221;
-  --ctp-red: 219, 96, 87;
-  --ctp-maroon: 228, 135, 129;
-  --ctp-peach: 246, 118, 44;
-  --ctp-yellow: 235, 196, 0;
-  --ctp-green: 56, 178, 125;
-  --ctp-teal: 57, 208, 188;
-  --ctp-sky: 77, 209, 213;
-  --ctp-sapphire: 77, 182, 213;
-  --ctp-blue: 77, 173, 213;
-  --ctp-lavender: 222, 186, 232;
-  --ctp-text: 230, 207, 179;
-  --ctp-subtext1: 176, 160, 141;
-  --ctp-subtext0: 171, 145, 109;
-  --ctp-overlay2: 145, 121, 89;
-  --ctp-overlay1: 120, 100, 74;
-  --ctp-overlay0: 95, 79, 58;
-  --ctp-surface2: 93, 78, 60;
-  --ctp-surface1: 61, 52, 41;
-  --ctp-surface0: 52, 43, 35;
-  --ctp-base: 44, 38, 33;
-  --ctp-mantle: 38, 33, 28;
-  --ctp-crust: 35, 30, 26;
-  --ctp-accent: var(--ctp-yellow);
 }
 .theme-dark.anp-theme-ext-dark.ctp-royal-velvet {
   --ctp-rosewater: 246, 201, 153;

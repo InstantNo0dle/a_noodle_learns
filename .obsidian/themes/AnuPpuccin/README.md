@@ -1,10 +1,13 @@
 <h1 align="center">AnuPpuccin</h1>
-<h3 align="center">Personal theme for <a href="https://obsidian.md">Obsidian</a> :3</h3><br>
+<h3 align="center">Sanitized theme for <a href="https://obsidian.md">Obsidian</a> :3</h3><br>
 
 <p align="center"> <img src="assets/gh-preview.webp"> </p>
 
 ## Preface
 Please do note that I've made this theme for myself, and it may not fit your use cases. However, I've made most of the configuration completely optional so that the experience remains as close to vanilla if you choose to do so. Most of the in-application variables are recolored so that your custom snippets can be used easily with the theme.
+This theme makes heavy use of the <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls most of the features in the theme. The theme is perfectly usable even without style settings, but it's only a fraction of what it actually is with the plugin.
+<br><br>
+I do not intend to publish this theme on the obsidian theme store since I don't want to deal with allegations of IP infringement and the like, and I will respond to feature/code removal only if there is substantial evidence of it being a direct copy of the original code and not just a simple imitation. (Please keep this point in mind before accusing me of being a low-effort theme developer.)
 
 ### If you like my theme:
 I've made this theme primarily for my own purposes and it's completely free, but if you do like it enough to consider throwing a few coins in my hat, here's a link.<br>
@@ -12,11 +15,14 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 <details>
 <summary><h2>Installation</h2></summary>
-- Grab the latest release from the <a href="https://github.com/AnubisNekhet/AnuPpuccin/releases/tag/Release">releases</a> page. <br>
-- For latest commits, clone the repo to your obsidian/themes folder. <br>
-<code>
-git clone https://github.com/AnubisNekhet/AnuPpuccin.git
-</code>
+<h3>Normal Installation</h3>
+Go to your theme folder (<code>.obsidian/themes</code>) and run:<br><br>
+<pre><code>git clone https://github.com/AnubisNekhet/AnuPpuccin.git</code></pre>
+<h3>Updating</h3>
+Go to your AnuPuccin folder (<code>.obsidian/themes/Anuppuccin</code>) and run:<br><br>
+<pre><code>git pull</code></pre>
+<h3>Building</h3>
+Clone the github repo and run <code>sass src/base.scss theme.css</code> in the root folder.
 </details>
 
 ## Features
@@ -46,11 +52,55 @@ You can toggle if the recolor applies to the title, the collapse border, the col
 
 <p align="center"> <img src="assets/gh-preview-tabs.webp"> </p>
 
+### Customisable Decorations
+<p align="center"> <img src="assets/gh-decorations-preview.webp"> </p>
+Bold and italic colors can be toggled on and off and can be customised according to the palette as well.
+
 ### Callouts
 <p align="center"> <img src="assets/gh-callout-preview.webp"> </p>
 The theme comes with many custom callout styles (which can be toggled so they won't interfere with your own callout snippet).<br>
 The snippet also includes support for using the colors of your selected palette which means that the callouts don't ever look out of place :)<br>
 If you use the admonition plugin/have custom callout colors, they won't be affected by the recolor as it only targets vanilla callouts. However, you can make them use AnuPpuccin's palette to support dynamic per-palette theming.<br>
+
+### Custom checkboxes & Speech bubbles
+<p align="center"> <img src="assets/gh-checkbox-preview.webp" width="50%"> </p>
+Anuppuccin's custom checkboxes try to mimic the original checkbox design as much as possible, while still being optional incase you want to use your own checkbox snippet.
+Speech bubbles have been provided which are useful for language learners and RPG vault users alike.<br>Custom checkboxes have been designed to match those provided by the <a href="https://github.com/ceciliamay/obsidianmd-theme-primary">Primary</a> theme for ease of migration and consistency.
+
+| Syntax | Description |
+|--------|-------------|
+| `- [ ]`  | Unchecked   |
+| `- [x]`  | Checked     |
+| `- [>]`  | Rescheduled |
+| `- [<]`  | Scheduled   |
+| `- [!]`  | Important   |
+| `- [-]`  | Cancelled   |
+| `- [/]`  | In Progress |
+| `- [?]`  | Question    |
+| `- [*]`  | Star        |
+| `- [n]`  | Note        |
+| `- [l]`  | Location    |
+| `- [i]`  | Information |
+| `- [I]`  | Idea        |
+| `- [S]`  | Amount      |
+| `- [p]`  | Pro         |
+| `- [c]`  | Con         |
+| `- [b]`  | Bookmark    |
+| `- ["]`  | Quote       |
+| `- [0]`  | Speech bubble 0 |
+| `- [1]`  | Speech bubble 1 |
+| `- [2]`  | Speech bubble 2 |
+| `- [3]`  | Speech bubble 3 |
+| `- [4]`  | Speech bubble 4 |
+| `- [5]`  | Speech bubble 5 |
+| `- [6]`  | Speech bubble 6 |
+| `- [7]`  | Speech bubble 7 |
+| `- [8]`  | Speech bubble 8 |
+| `- [9]`  | Speech bubble 9 |
+
+### Colorful Frames
+<p align="center"> <img src="assets/gh-colorful-frames-preview.webp"> </p>
+Adapted from Kepano's <a href="https://github.com/kepano/obsidian-minimal">Minimal</a> theme, colorful frames add some pop to your vault by displaying your accent color on the top-most bar.
 
 ### Simplified markdown embeds
 Markdown embeds have an alternate styling with an animated variant which can be toggled globally using style settings or individually using alt names for embeds, for example: `![[embed|alt-name]]`
@@ -74,9 +124,8 @@ Markdown embeds have an alternate styling with an animated variant which can be 
 | [Dracula](https://github.com/dracula/dracula-theme) | No | Yes | - |
 | [Gruvbox](https://github.com/morhetz/gruvbox) | Yes | Yes | - |
 | [Nord](https://github.com/arcticicestudio/nord) | Yes | Yes | A custom darker variant of the dark theme is included as well. <br> Accent value is hardcoded into the theme.|
-| [Primary](https://github.com/ceciliamay/obsidianmd-theme-primary) | Yes | Yes | Accent value is hardcoded into the theme. |
 | [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) | Yes | Yes | The second variant of the dark theme, namely Rosé Pine dawn hasn't been implemented yet. |
-| [Rosebox](https://github.com/KraXen72/rosebox) | No | Yes | - |
+| [Rosebox](https://github.com/KraXen72/rosebox) | No | Yes | Accent value is hardcoded into the theme. |
 | [Royal Velvet](https://github.com/caro401/royal-velvet) | No | Yes | - |
 | [Solarized](https://github.com/altercation/solarized) | Yes | Yes | - |
 
@@ -168,6 +217,16 @@ Note: Themes are toggled via style settings, the default themes are **Latte** fo
 - Kanban
 - Style Settings
 
+### Recommended Fonts
+- **Interface**: [Overpass](https://fonts.google.com/specimen/Overpass)
+- **Text**: [Rubik](https://fonts.google.com/specimen/Rubik)
+- **Headings**: [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
+
 ### Special thanks to:
 - [Chuck Harmston](https://github.com/chuckharmston) for his amazing alternate tabs snippet.
 - [EdualcLaiv](https://github.com/EdualcLaiv)
+- [Paul Ryley](https://github.com/pryley) for his gorgeous numbered codeblock snippet and style inputs on kanban cards and safari-style tabs.
+
+## Credits and Acknowledgements
+- [@kepano's](https://github.com/kepano) [Minimal](https://github.com/kepano/obsidian-minimal) for the inspiration for [colorful frames](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/colorful-frame.scss) and partial inspiration for style settings menus design, as well as style settings for the Minimal Cards snippet
+- [@ceciliamay's](https://github.com/ceciliamay) [Primary](https://github.com/ceciliamay/obsidianmd-theme-primary) for inspiration for [custom checkboxes](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/custom-checkboxes.scss) and [floating vault title](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/floating-title.scss)

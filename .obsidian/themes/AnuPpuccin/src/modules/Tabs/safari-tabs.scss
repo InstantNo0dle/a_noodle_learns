@@ -1,8 +1,9 @@
-.anp-alternate-tab-toggle, .anp-default-tab {
+.anp-alternate-tab-toggle, .anp-default-tab, .anp-safari-tab-toggle {
   --header-height: var(--anp-alt-tab-custom-height, 40px);
   --tab-stacked-header-width: var(--anp-stacked-header-width, 40px);
 }
-.anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) {
+.anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked),
+.anp-safari-tab-toggle .workspace-tabs:not(.mod-stacked) {
   --tab-background: var(--background-secondary);
   --tab-background-active: var(--background-primary);
   --tab-font-size: 12px;
@@ -25,25 +26,31 @@
 .anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
 .anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
   align-items: center;
-  justify-content: center;
+  justify-content: var(--anp-safari-tab-align, center);
   margin: 0;
   width: 100%;
+  gap: var(--anp-safari-tab-gap, 10px);
+}
+.anp-disable-newtab-align.anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
+.anp-disable-newtab-align.anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+  width: unset;
+  gap: var(--anp-safari-tab-gap, 10px);
 }
 .anp-alternate-tab-toggle .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
 .anp-alternate-tab-toggle .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
   background: var(--tab-background);
-  border-radius: 6px;
+  border-radius: var(--anp-safari-tab-radius, 6px);
   box-shadow: none !important;
   height: var(--tab-height);
-  margin-left: 12px;
   padding: 0 !important;
   transition: 400ms, background-color 150ms ease-in-out;
 }
 .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-  max-width: var(--tab-max-width) !important;
+  max-width: var(--tab-max-width);
+  border: var(--anp-safari-border-width, 1px) solid var(--tab-outline-color);
 }
 .anp-alternate-tab-toggle.anp-alt-tab-anim-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-  transition: 400ms;
+  transition: 400ms, background-color 150ms ease-in-out;
 }
 .anp-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header:first-child {
   margin-left: 0;
@@ -51,28 +58,37 @@
 .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
   padding: 7px 8px;
 }
-.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
-  padding: 0 4px 0 8px;
-  color: var(--text-muted);
-  transition: 400ms;
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked){
+  .workspace-tab-header-inner {
+    padding: 0 4px 0 8px;
+  transition: 400ms, background-color 150ms ease-in-out, max-width 400ms;
+  }
+  .workspace-tab-header-inner, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-icon {
+    color: var(--text-muted);
+  }
 }
 .anp-alternate-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
   display: none;
 }
 .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
-  flex-grow: 1.67 !important;
-  max-width: var(--tab-max-width-active) !important;
+  flex-grow: 1.67;
+  max-width: var(--tab-max-width-active) ;
   background-color: var(--background-primary);
 }
 .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--color-accent);
 }
 .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
-  .workspace-tab-header-inner, .workspace-tab-header-inner-title  {
-    color: var(--color-accent);
+  .workspace-tab-header-inner, .workspace-tab-header-inner-title, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-icon  {
+    color: var(--text-faint);
   }
   .workspace-tab-header-inner:hover {
     background-color: rgba(var(--ctp-surface1), 0.4);
+  }
+}
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active {
+  .workspace-tab-header-inner, .workspace-tab-header-inner-title, .workspace-tab-header-inner-close-button, .workspace-tab-header-inner-icon  {
+    color: var(--color-accent) !important;
   }
 }
 .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active:hover {
@@ -85,4 +101,7 @@
 .anp-alternate-tab-toggle .sidebar-toggle-button.mod-left .clickable-icon,
 .anp-alternate-tab-toggle .sidebar-toggle-button.mod-right .clickable-icon {
   height: var(--tab-height);
+}
+.is-focused:not(.anp-mini-tab-toggle.anp-colorful-frame) .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--color-accent);
 }

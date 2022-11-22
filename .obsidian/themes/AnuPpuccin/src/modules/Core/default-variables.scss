@@ -125,7 +125,6 @@
     --background-modifier-error: rgba(var(--ctp-red), 1);
     --background-modifier-error-rgb: var(--ctp-red);
     --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
-    --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
     --background-modifier-message: rgba(var(--ctp-crust), 0.9);
     --modal-border-color:rgb(var(--ctp-surface0));
     --text-normal: rgb(var(--ctp-text));
@@ -139,9 +138,6 @@
     --interactive-normal: rgb(var(--ctp-surface0));
     --interactive-hover: rgb(var(--ctp-surface1));
     --interactive-success: rgb(var(--ctp-green));
-    --scrollbar-active-thumb-bg: rgba(var(--ctp-base), 0.2);
-    --scrollbar-bg: rgba(var(--ctp-crust), 0.05);
-    --scrollbar-thumb-bg: rgba(var(--ctp-mantle), 0.1);
     --workspace-background-translucent: rgba(var(--ctp-crust), 0.6);
     --blockquote-background-color: rgba(var(--ctp-crust), 0.5);
     --width-image-gallery: 200px;
@@ -152,6 +148,9 @@
     --nav-indentation-guide-color: rgba(var(--ctp-crust), 0.4);
     --titlebar-text-color-focused: var(--color-accent);
     --callout-title-padding: var(--size-4-2);
+    --table-border-width: var(--anp-table-thickness, 1px);
+    --icon-color-focused: var(--color-accent);
+    --embed-block-shadow-hover: none; //no shadow
 }
 .theme-dark {
       color-scheme: dark;
@@ -159,6 +158,8 @@
     --background-modifier-border: rgb(var(--ctp-surface0));
     --background-modifier-border-hover: rgb(var(--ctp-surface1));
     --background-modifier-border-focus: rgb(var(--ctp-surface2));
+    --anp-speech-bubble-opacity: var(--anp-sp-op-dark, 0.9);
+    --background-modifier-cover: rgba(var(--ctp-mantle), 0.4);
 }
 .theme-light {
       color-scheme: light;
@@ -166,6 +167,8 @@
     --background-modifier-border: rgb(var(--ctp-surface1));
     --background-modifier-border-hover: rgb(var(--ctp-surface2));
     --background-modifier-border-focus: rgb(var(--ctp-overlay0));
+    --anp-speech-bubble-opacity: var(--anp-sp-op-light, 0.5);
+    --background-modifier-cover: #00000022
 }
 body {
   --anp-rainbow-folder-bg-opacity: 1;
@@ -175,6 +178,6 @@ body {
   --anp-preview-width-max: 800px;
   --anp-header-margin-value: 10px;
   --anp-header-font: "Noto Serif";
-  --tab-stacked-pane-width: var(--file-line-width);
+  --tab-stacked-pane-width: calc(var(--anp-tab-stacked-pane-width, 1)*var(--file-line-width));
   --anp-table-width-pct: 100%;
 }

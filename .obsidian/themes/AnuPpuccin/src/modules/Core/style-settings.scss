@@ -126,9 +126,28 @@ settings:
         collapsed: true
     - 
         id: anp-colorful-frame
-        title: Toggle colorful frame (WIP)
-        description: Only works with default layout. Inspired by kepano's Minimal theme.
+        title: "Toggle colorful frame (WIP)"
         type: class-toggle
+    - 
+        id: anp-colorful-frame-opacity
+        title: Colorful frame opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
+        id: anp-colorful-frame-color
+        title: Custom colorful frame color
+        type: variable-themed-color
+        format: "rgb-values"
+        opacity: false
+        default-light: '#'
+        default-dark: '#'
+        alt-format:
+            -
+                id: anp-colorful-frame-color-hsl
+                format: "hsl-values"
     - 
         id: anp-callout-header
         title: Callouts
@@ -156,8 +175,8 @@ settings:
                 label: Block
                 value: anp-callout-block
             - 
-                label: Willemstad
-                value: anp-callout-willemstad
+                label: Vanilla
+                value: anp-callout-vanilla
     - 
         id: anp-callout-normal-toggle
         title: Toggle callout styling to non-collapsible callouts
@@ -176,6 +195,20 @@ settings:
     - 
         id: anp-callout-fold-position
         title: Callout fold position
+        type: class-toggle
+    - 
+        id: anp-custom-checkboxes-header
+        title: Custom checkboxes
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: anp-custom-checkboxes
+        title: Enable custom checkboxes
+        type: class-toggle
+    - 
+        id: anp-speech-bubble
+        title: Enable speech bubbles
         type: class-toggle
     - 
         id: anp-editor-header
@@ -240,11 +273,10 @@ settings:
         format: px
     - 
         id: anp-tab-stacked-pane-width
-        title: Stacked tabs pane width
-        description: In percentage
+        title: Stacked tabs pane width multiplier
+        description: Multiplies the stack tab pane with which depends on file line width
         type: variable-number
-        default: 100
-        format: "%"
+        default: 1
     - 
         id: anp-ui-header
         title: General UI
@@ -256,6 +288,10 @@ settings:
         title: Hide metadata
         type: class-toggle
     - 
+        id: anp-hide-status-bar
+        title: Hide status bar
+        type: class-toggle
+    - 
         id: anp-tooltip-toggle
         title: Disable tooltips
         type: class-toggle
@@ -265,30 +301,21 @@ settings:
         type: class-toggle
     - 
         id: anp-header-header
-        title: Headers
+        title: Headings
         type: heading
         level: 2
         collapsed: true
     -
-        id: anp-header-toggle
-        title: Toggle to enable custom header
-        type: class-toggle
-    - 
-        id: anp-header-font
-        title: Heading Font
-        type: variable-text
-        default: Noto Serif
-    -
         id: anp-header-color-toggle
-        title: Toggle to enable custom header colors
+        title: Toggle to enable custom heading colors
         type: class-toggle
     -
         id: anp-header-margin-toggle
-        title: Toggle to enable custom header margin
+        title: Toggle to enable custom heading margin
         type: class-toggle
     - 
         id: anp-header-margin-value
-        title: Header margin value
+        title: Heading margin value
         description: Size unit is px
         type: variable-number-slider
         min: 0
@@ -296,12 +323,17 @@ settings:
         step: 2
         default: 20
         format: px
-    - 
-        id: anp-header-size-value
-        title: Header font sizes
+    -
+        id: anp-h1-header
+        title: H1 settings
         type: heading
-        level: 4
-        collapsed: false
+        level: 3
+        collapsed: true
+    -
+        id: h1-font
+        title: H1 font family
+        type: variable-text
+        default: Noto Serif
     - 
         id: h1-size
         title: H1 Size
@@ -310,12 +342,160 @@ settings:
         default: 2
         format: em
     - 
+        id: h1-weight
+        title: H1 weight
+        type: variable-number
+        default: 700
+    - 
+        id: h1-line-height
+        title: H1 line height
+        type: variable-number
+        default: 1.2
+    - 
+        id: anp-h1-color-custom
+        title: H1 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h1-red
+        options:
+            - 
+                label: Rosewater
+                value: anp-h1-rosewater
+            - 
+                label: Flamingo
+                value: anp-h1-flamingo
+            - 
+                label: Pink
+                value: anp-h1-pink
+            - 
+                label: Mauve
+                value: anp-h1-mauve
+            - 
+                label: Red
+                value: anp-h1-red
+            - 
+                label: Maroon
+                value: anp-h1-maroon
+            - 
+                label: Peach
+                value: anp-h1-peach
+            - 
+                label: Yellow
+                value: anp-h1-yellow
+            - 
+                label: Green
+                value: anp-h1-green
+            - 
+                label: Teal
+                value: anp-h1-teal
+            - 
+                label: Sky
+                value: anp-h1-sky
+            - 
+                label: Sapphire
+                value: anp-h1-sapphire
+            - 
+                label: Blue
+                value: anp-h1-blue
+            - 
+                label: Lavender
+                value: anp-h1-lavender
+    -
+        id: anp-h1-divider
+        title: H1 divider
+        type: class-toggle
+    -
+        id: anp-h2-header
+        title: H2 settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h2-font
+        title: H2 font family
+        type: variable-text
+        default: Noto Serif
+    - 
         id: h2-size
         title: H2 Size
         description: Size unit is em
         type: variable-number
         default: 1.6
         format: em
+    - 
+        id: h2-weight
+        title: H2 weight
+        type: variable-number
+        default: 600
+    - 
+        id: h2-line-height
+        title: H2 line height
+        type: variable-number
+        default: 1.2
+    - 
+        id: anp-h2-color-custom
+        title: H2 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h2-peach
+        options:
+            - 
+                label: Rosewater
+                value: anp-h2-rosewater
+            - 
+                label: Flamingo
+                value: anp-h2-flamingo
+            - 
+                label: Pink
+                value: anp-h2-pink
+            - 
+                label: Mauve
+                value: anp-h2-mauve
+            - 
+                label: Red
+                value: anp-h2-red
+            - 
+                label: Maroon
+                value: anp-h2-maroon
+            - 
+                label: Peach
+                value: anp-h2-peach
+            - 
+                label: Yellow
+                value: anp-h2-yellow
+            - 
+                label: Green
+                value: anp-h2-green
+            - 
+                label: Teal
+                value: anp-h2-teal
+            - 
+                label: Sky
+                value: anp-h2-sky
+            - 
+                label: Sapphire
+                value: anp-h2-sapphire
+            - 
+                label: Blue
+                value: anp-h2-blue
+            - 
+                label: Lavender
+                value: anp-h2-lavender
+    -
+        id: anp-h2-divider
+        title: H2 divider
+        type: class-toggle
+    -
+        id: anp-h3-header
+        title: H3 settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h3-font
+        title: H3 font family
+        type: variable-text
+        default: Noto Serif
     - 
         id: h3-size
         title: H3 Size
@@ -324,12 +504,160 @@ settings:
         default: 1.37
         format: em
     - 
+        id: h3-weight
+        title: H3 weight
+        type: variable-number
+        default: 600
+    - 
+        id: h3-line-height
+        title: H3 line height
+        type: variable-number
+        default: 1.3
+    - 
+        id: anp-h3-color-custom
+        title: H3 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h3-green
+        options:
+            - 
+                label: Rosewater
+                value: anp-h3-rosewater
+            - 
+                label: Flamingo
+                value: anp-h3-flamingo
+            - 
+                label: Pink
+                value: anp-h3-pink
+            - 
+                label: Mauve
+                value: anp-h3-mauve
+            - 
+                label: Red
+                value: anp-h3-red
+            - 
+                label: Maroon
+                value: anp-h3-maroon
+            - 
+                label: Peach
+                value: anp-h3-peach
+            - 
+                label: Yellow
+                value: anp-h3-yellow
+            - 
+                label: Green
+                value: anp-h3-green
+            - 
+                label: Teal
+                value: anp-h3-teal
+            - 
+                label: Sky
+                value: anp-h3-sky
+            - 
+                label: Sapphire
+                value: anp-h3-sapphire
+            - 
+                label: Blue
+                value: anp-h3-blue
+            - 
+                label: Lavender
+                value: anp-h3-lavender
+    -
+        id: anp-h3-divider
+        title: H3 divider
+        type: class-toggle
+    -
+        id: anp-h4-header
+        title: H4 settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h4-font
+        title: H4 font family
+        type: variable-text
+        default: Noto Serif
+    - 
         id: h4-size
         title: H4 Size
         description: Size unit is em
         type: variable-number
         default: 1.25
         format: em
+    - 
+        id: h4-weight
+        title: H4 weight
+        type: variable-number
+        default: 600
+    - 
+        id: h4-line-height
+        title: H4 line height
+        type: variable-number
+        default: 1.4
+    - 
+        id: anp-h4-color-custom
+        title: H4 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h4-teal
+        options:
+            - 
+                label: Rosewater
+                value: anp-h4-rosewater
+            - 
+                label: Flamingo
+                value: anp-h4-flamingo
+            - 
+                label: Pink
+                value: anp-h4-pink
+            - 
+                label: Mauve
+                value: anp-h4-mauve
+            - 
+                label: Red
+                value: anp-h4-red
+            - 
+                label: Maroon
+                value: anp-h4-maroon
+            - 
+                label: Peach
+                value: anp-h4-peach
+            - 
+                label: Yellow
+                value: anp-h4-yellow
+            - 
+                label: Green
+                value: anp-h4-green
+            - 
+                label: Teal
+                value: anp-h4-teal
+            - 
+                label: Sky
+                value: anp-h4-sky
+            - 
+                label: Sapphire
+                value: anp-h4-sapphire
+            - 
+                label: Blue
+                value: anp-h4-blue
+            - 
+                label: Lavender
+                value: anp-h4-lavender
+    -
+        id: anp-h4-divider
+        title: H4 divider
+        type: class-toggle
+    -
+        id: anp-h5-header
+        title: H5 settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h5-font
+        title: H5 font family
+        type: variable-text
+        default: Noto Serif
     - 
         id: h5-size
         title: H5 Size
@@ -338,12 +666,149 @@ settings:
         default: 1.12
         format: em
     - 
+        id: h5-weight
+        title: H5 weight
+        type: variable-number
+        default: 600
+    - 
+        id: h5-line-height
+        title: H5 line height
+        type: variable-number
+        default: 1.5
+    - 
+        id: anp-h5-color-custom
+        title: H5 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h5-lavender
+        options:
+            - 
+                label: Rosewater
+                value: anp-h5-rosewater
+            - 
+                label: Flamingo
+                value: anp-h5-flamingo
+            - 
+                label: Pink
+                value: anp-h5-pink
+            - 
+                label: Mauve
+                value: anp-h5-mauve
+            - 
+                label: Red
+                value: anp-h5-red
+            - 
+                label: Maroon
+                value: anp-h5-maroon
+            - 
+                label: Peach
+                value: anp-h5-peach
+            - 
+                label: Yellow
+                value: anp-h5-yellow
+            - 
+                label: Green
+                value: anp-h5-green
+            - 
+                label: Teal
+                value: anp-h5-teal
+            - 
+                label: Sky
+                value: anp-h5-sky
+            - 
+                label: Sapphire
+                value: anp-h5-sapphire
+            - 
+                label: Blue
+                value: anp-h5-blue
+            - 
+                label: Lavender
+                value: anp-h5-lavender
+    -
+        id: anp-h5-divider
+        title: H5 divider
+        type: class-toggle
+    -
+        id: anp-h6-header
+        title: H6 settings
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h6-font
+        title: H6 font family
+        type: variable-text
+        default: Noto Serif
+    - 
         id: h6-size
         title: H6 Size
         description: Size unit is em
         type: variable-number
         default: 1.12
         format: em
+    - 
+        id: h6-weight
+        title: H6 weight
+        type: variable-number
+        default: 600
+    - 
+        id: h6-line-height
+        title: H6 line height
+        type: variable-number
+        default: 1.5
+    - 
+        id: anp-h6-color-custom
+        title: H6 color
+        type: class-select
+        allowEmpty: true
+        default: anp-h6-mauve
+        options:
+            - 
+                label: Rosewater
+                value: anp-h6-rosewater
+            - 
+                label: Flamingo
+                value: anp-h6-flamingo
+            - 
+                label: Pink
+                value: anp-h6-pink
+            - 
+                label: Mauve
+                value: anp-h6-mauve
+            - 
+                label: Red
+                value: anp-h6-red
+            - 
+                label: Maroon
+                value: anp-h6-maroon
+            - 
+                label: Peach
+                value: anp-h6-peach
+            - 
+                label: Yellow
+                value: anp-h6-yellow
+            - 
+                label: Green
+                value: anp-h6-green
+            - 
+                label: Teal
+                value: anp-h6-teal
+            - 
+                label: Sky
+                value: anp-h6-sky
+            - 
+                label: Sapphire
+                value: anp-h6-sapphire
+            - 
+                label: Blue
+                value: anp-h6-blue
+            - 
+                label: Lavender
+                value: anp-h6-lavender
+    -
+        id: anp-h6-divider
+        title: H6 divider
+        type: class-toggle
     - 
         id: anp-layout-header
         title: Layout
@@ -368,11 +833,36 @@ settings:
         title: Disable borders
         type: class-toggle
     - 
+        id: anp-bg-fix
+        title: Background fix for applying colors
+        type: class-toggle
+    - 
         id: anp-layout-card
         title: Card layout settings
         type: heading
         level: 3
         collapsed: true
+    - 
+        id: anp-card-radius
+        title: Card radius
+        description: Size unit is px
+        type: variable-number
+        default: 16
+        format: px
+    - 
+        id: anp-card-layout-padding
+        title: Card padding
+        description: Size unit is px
+        type: variable-number
+        default: 10
+        format: px
+    - 
+        id: anp-card-header-left-padding
+        title: Tab left padding
+        description: Size unit is px
+        type: variable-number
+        default: 20
+        format: px
     - 
         id: anp-card-shadows
         title: Enable shadows
@@ -431,8 +921,20 @@ settings:
         level: 2
         collapsed: true
     - 
+        id: anp-collapse-folders
+        title: Enable folder icons for collapse indicators
+        type: class-toggle
+    - 
+        id: anp-codeblock-numbers
+        title: Enable codeblock numbering
+        type: class-toggle
+    - 
         id: anp-button-metadata-toggle
         title: Enable custom metadata button
+        type: class-toggle
+    - 
+        id: anp-floating-header
+        title: Enable floating vault title
         type: class-toggle
     - 
         id: anp-custom-vault-toggle
@@ -445,7 +947,7 @@ settings:
         type: class-toggle
     - 
         id: anp-plugin-header
-        title: Plugin integrations
+        title: "Plugin/Snippet integrations"
         type: heading
         level: 2
         collapsed: true
@@ -456,10 +958,44 @@ settings:
         level: 3
         collapsed: true
     - 
-        id: anp-plugin-style-settings-header-color
-        title: Toggle to enable colored headers in style settings menu
-        type: class-toggle
-    - 
+        id: anp-snippet-minimal-cards
+        title: Minimal Cards
+        description: "The snippet is available at: https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss"
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: cards-min-width
+        title: Card minimum width
+        type: variable-text
+        default: 180px
+    -
+        id: cards-max-width
+        title: Card maximum width
+        description: Default fills the available width, accepts valid CSS units
+        type: variable-text
+        default: 1fr
+    -
+        id: cards-mobile-width
+        title: Card minimum width on mobile
+        type: variable-text
+        default: 120px
+    -
+        id: cards-padding
+        title: Card padding
+        type: variable-text
+        default: 1.2em
+    -
+        id: cards-image-height
+        title: Card maximum image height
+        type: variable-text
+        default: 400px
+    -
+        id: cards-border-width
+        title: Card border width
+        type: variable-text
+        default: 1px
+    -
         id: anp-rainbow-section-header
         title: Rainbow folder
         type: heading
@@ -562,6 +1098,76 @@ settings:
         title: Enable custom table width
         description: Use anp-table-width for yaml syntax
         type: class-toggle
+    -
+        id: anp-th-highlight
+        title: Th highlight
+        type: class-toggle
+    -
+        id: anp-td-highlight
+        title: Td highlight
+        type: class-select
+        default: anp-td-none
+        allowEmpty: false
+        options:
+            -
+                label: None
+                value: anp-td-none
+            -
+                label: Alternate rows
+                value: anp-td-alt-rows
+            -
+                label: Alternate columns
+                value: anp-td-alt-cols
+            -
+                label: Checkered
+                value: anp-td-checkered
+            -
+                label: Full
+                value: anp-td-full
+    -
+        id: anp-table-highlight-opacity
+        title: Highlight opacity
+        default: 0.5
+        type: variable-number-slider
+        min: 0
+        max: 1
+        step: 0.1
+    -
+        id: anp-table-align-th
+        title: Th text align
+        type: variable-select
+        default: center
+        options:
+            -
+                label: Left
+                value: left
+            -
+                label: Center
+                value: center
+            -
+                label: Right
+                value: right
+    -
+        id: anp-table-align-td
+        title: Td text align
+        type: variable-select
+        default: center
+        options:
+            -
+                label: Left
+                value: left
+            -
+                label: Center
+                value: center
+            -
+                label: Right
+                value: right
+    -
+        id: anp-table-thickness
+        title: Custom table border width
+        type: variable-number
+        default: 2
+        format: px
     - 
         id: anp-table-width-pct
         title: Custom table width
@@ -589,8 +1195,11 @@ settings:
                 label: Minimalistic
                 value: anp-mini-tab-toggle
             - 
-                label: Safari-style
+                label: Safari-style (Animated)
                 value: anp-alternate-tab-toggle
+            - 
+                label: Safari-style (Vanilla)
+                value: anp-safari-tab-toggle
     - 
         id: anp-alt-tab-custom-height
         title: Custom tab height
@@ -599,11 +1208,25 @@ settings:
         default: 40
         format: px
     - 
+        id: anp-disable-newtab-align
+        title: Disable new tab button right alignment
+        type: class-toggle
+    - 
         id: anp-mini-tab-header
         title: Minimalistic Tab settings
         type: heading
         level: 3
         collapsed: true
+    - 
+        id: anp-safari-vanilla-tab-header
+        title: Vanilla Safari-style Tab settings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: anp-safari-tab-animated
+        title: Enable WIP animated safari tabs
+        type: class-toggle
     - 
         id: anp-safari-tab-header
         title: Safari-style Tab settings
@@ -611,6 +1234,64 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: anp-safari-tab-radius
+        title: Tab radius
+        type: variable-number
+        description: Size unit is px
+        default: 6
+        format: px
+    -
+        id: anp-safari-tab-gap
+        title: Tab gap
+        type: variable-number
+        description: Size unit is px
+        default: 10
+        format: px
+    -
+        id: anp-safari-border-width
+        title: Tab border width
+        type: variable-number
+        description: Size unit is px
+        default: 1
+        format: px
+    -
+        id: anp-safari-tab-align
+        title: Tab align
+        type: variable-select
+        default: center
+        options:
+            -
+                label: Left
+                value: left
+            -
+                label: Center
+                value: center
+            -
+                label: Right
+                value: right
+    -
+        id: anp-tags-header
+        title: Tags
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: tag-border-width
+        title: Tag border width
+        type: variable-number
+        description: Size unit is px
+        default: 0
+        format: px
+    -
+        id: tag-radius
+        title: Tag radius
+        type: variable-number-slider
+        default: 2
+        max: 2
+        min: 0
+        step: 0.1
+        format: em
     - 
         id: anp-decor-header
         title: Text decorations

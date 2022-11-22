@@ -26,6 +26,10 @@
 .popover.hover-popover.is-loaded {
   animation: fade .2s;
 }
+.popover .markdown-embed-link {
+  --icon-color: var(--text-normal);
+  --icon-color-hover: var(--text-faint);
+}
 /*-Recolor tooltips-*/
 .tooltip {
   color: rgb(var(--text));
@@ -44,6 +48,10 @@
 .mod-left-split .workspace-tab-header.has-active-menu:hover, .mod-right-split .workspace-tab-header.has-active-menu:hover, .mod-left-split .workspace-tab-header.is-active:hover, .mod-right-split .workspace-tab-header.is-active:hover {
   background-color: var(--background-modifier-active-hover);
 }
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--color-accent);
+.anp-hide-status-bar .status-bar {
+  display: none;
+}
+.workspace, .horizontal-main-container,
+.anp-card-layout .mod-vertical .workspace-tabs {
+  background-color: var(--background-secondary-alt);
 }

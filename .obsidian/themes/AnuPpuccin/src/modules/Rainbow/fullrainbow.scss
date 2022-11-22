@@ -31,9 +31,6 @@
   //Hide scrollbars and allow horizontal scrolling
   .nav-file {
     overflow-y: hidden;
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
   //Renaming files
   .nav-file-title-content.is-being-renamed, .nav-folder-title-content.is-being-renamed {
