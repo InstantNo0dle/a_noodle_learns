@@ -1,0 +1,2184 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Generative Models of Brain Dynamics - obsidian-mkdocs template</title>
+<link href="../../assets/stylesheets/main.472b142f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href="../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Generative Models of Brain Dynamics
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Obsidian Notes
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          03.01 peak learning
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="03.01 peak learning" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          03.01 peak learning
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ATP%20synthase/">
+        ATP synthase
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Absorption%20Spectrum/">
+        Absorption Spectrum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Acid-base%20definitions/">
+        Acid-base definitions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Acid-base%20reactions/">
+        Acid-base reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Acids/">
+        Acids
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Action%20Spectrum/">
+        Action Spectrum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Alcohol%20Fermentation/">
+        Alcohol Fermentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Alternation%20of%20generations/">
+        Alternation of generations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Alveoleta/">
+        Alveoleta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Amoebozoans/">
+        Amoebozoans
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Anaerobic%20Respiration/">
+        Anaerobic Respiration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ancient%20Astronomy/">
+        Ancient Astronomy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Angiosperms/">
+        Angiosperms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Angular%20Acceleration/">
+        Angular Acceleration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Angular%20Momentum/">
+        Angular Momentum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Angular%20Position/">
+        Angular Position
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Angular%20Velocity/">
+        Angular Velocity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Anthocerophyta/">
+        Anthocerophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Apicomplexans/">
+        Apicomplexans
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Apoptosis/">
+        Apoptosis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Archaea%20phylogeny/">
+        Archaea phylogeny
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Archaea/">
+        Archaea
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Archaeaplastida/">
+        Archaeaplastida
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Archimedes%20Principle/">
+        Archimedes Principle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Asthenosphere/">
+        Asthenosphere
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Astronomical%20Unit/">
+        Astronomical Unit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Atomic%20orbitals/">
+        Atomic orbitals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Atomic%20radius/">
+        Atomic radius
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Atoms/">
+        Atoms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Axial%20Precession/">
+        Axial Precession
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bacteria%20as%20solution%20to%20plastics/">
+        Bacteria as solution to plastics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bacteria%20phylogeny/">
+        Bacteria phylogeny
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bacteria/">
+        Bacteria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bases/">
+        Bases
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bernoulli%27s%20Equation/">
+        Bernoulli's Equation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bootstrap%20method/">
+        Bootstrap method
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Brown%20algae/">
+        Brown algae
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Bryophyta/">
+        Bryophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../C3%20Plants/">
+        C3 Plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../C4%20Plants/">
+        C4 Plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CAM%20Plants/">
+        CAM Plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Calcium%20Ions%20%28IP3-DAG%29/">
+        Calcium Ions (IP3-DAG)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Calvin%20Cycle/">
+        Calvin Cycle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Carotenoids/">
+        Carotenoids
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Carpels/">
+        Carpels
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cell%20Signaling/">
+        Cell Signaling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cercozoans/">
+        Cercozoans
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chagas%27%20disease/">
+        Chagas' disease
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Charophytes/">
+        Charophytes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chemical%20nomenclature/">
+        Chemical nomenclature
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chemiosmosis/">
+        Chemiosmosis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chlamydias/">
+        Chlamydias
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chlorophyll%20a/">
+        Chlorophyll a
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chlorophyll%20b/">
+        Chlorophyll b
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chlorophyll/">
+        Chlorophyll
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chlorophytes/">
+        Chlorophytes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cholera/">
+        Cholera
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Chromatography/">
+        Chromatography
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ciliates/">
+        Ciliates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cleavage/">
+        Cleavage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Combustion%20analysis/">
+        Combustion analysis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Combustion%20reactions/">
+        Combustion reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Coniferophyta/">
+        Coniferophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Conservation%20of%20Angular%20Momentum/">
+        Conservation of Angular Momentum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Constant%20Angular%20Acceleration/">
+        Constant Angular Acceleration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Constellations/">
+        Constellations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Continental%20Crust/">
+        Continental Crust
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Continental%20Margin/">
+        Continental Margin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Continuity%20Equation/">
+        Continuity Equation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Core/">
+        Core
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Crystal%20Habit/">
+        Crystal Habit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cyanobacteria/">
+        Cyanobacteria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cycadophyta/">
+        Cycadophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Cyclic%20Electron%20Flow/">
+        Cyclic Electron Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Decantation/">
+        Decantation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Decomposition%20reactions/">
+        Decomposition reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Deep-Ocean%20Basins/">
+        Deep-Ocean Basins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Diatoms/">
+        Diatoms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Dilution/">
+        Dilution
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Dinoflagellates/">
+        Dinoflagellates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Diplomonads/">
+        Diplomonads
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Distillation/">
+        Distillation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Double%20displacement%20gas%20evolution%20reactions/">
+        Double displacement gas evolution reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Earth%27s%20Revolution/">
+        Earth's Revolution
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Earth%27s%20Rotation/">
+        Earth's Rotation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Eclipse/">
+        Eclipse
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Effective%20nuclear%20charge/">
+        Effective nuclear charge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Electron%20Transport%20Chain/">
+        Electron Transport Chain
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Electron%20affinities/">
+        Electron affinities
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Electron%20spin/">
+        Electron spin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Elevator%20statement/">
+        Elevator statement
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Empirical%20distribution%20function/">
+        Empirical distribution function
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Empirical%20formula/">
+        Empirical formula
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Endotoxins/">
+        Endotoxins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Engelmann%27s%20Experiment/">
+        Engelmann's Experiment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ensemble%20methods/">
+        Ensemble methods
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Entamoebas/">
+        Entamoebas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Equatorial%20System/">
+        Equatorial System
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Escape%20Speed/">
+        Escape Speed
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Euglenozoans/">
+        Euglenozoans
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Excavata/">
+        Excavata
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Exotoxins/">
+        Exotoxins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FADH2/">
+        FADH2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Fermentation/">
+        Fermentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ferns/">
+        Ferns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Filtration/">
+        Filtration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Flowers/">
+        Flowers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Forams/">
+        Forams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Formation%20of%20Solar%20System/">
+        Formation of Solar System
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Foucault%27s%20Pendulum/">
+        Foucault's Pendulum
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Fracture/">
+        Fracture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Friction/">
+        Friction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Fruits/">
+        Fruits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../G-Protein%20Coupled%20Receptors/">
+        G-Protein Coupled Receptors
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gametangia/">
+        Gametangia
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Generative Models of Brain Dynamics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Geocentric%20View/">
+        Geocentric View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ginkgophyta/">
+        Ginkgophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gnetophyta/">
+        Gnetophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gram%20negative%20bacteria/">
+        Gram negative bacteria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gram%20positive%20bacteria/">
+        Gram positive bacteria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gram%20stain/">
+        Gram stain
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gravitational%20Potential%20Energy/">
+        Gravitational Potential Energy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Gymnosperms/">
+        Gymnosperms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Hardness/">
+        Hardness
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Heliocentric%20View/">
+        Heliocentric View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Hepatophyta/">
+        Hepatophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Horsetails/">
+        Horsetails
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Hund%27s%20rule/">
+        Hund's rule
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Inner%20Core/">
+        Inner Core
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Introduction%20to%20CS229%20Powerpoint/">
+        Introduction to CS229 Powerpoint
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ionic%20radius/">
+        Ionic radius
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ionization%20energy/">
+        Ionization energy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Kepler%27s%20Laws/">
+        Kepler's Laws
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lactic%20Acid%20Fermentation/">
+        Lactic Acid Fermentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Law%20of%20Gravitation/">
+        Law of Gravitation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Leaves/">
+        Leaves
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lewis%20acid-base%20reactions/">
+        Lewis acid-base reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Life%20Cycle%20of%20a%20Star/">
+        Life Cycle of a Star
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Light%20Reactions/">
+        Light Reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Limiting%20reactant/">
+        Limiting reactant
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Linear%20Acceleration/">
+        Linear Acceleration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Linear%20Algebra%20for%20Machine%20Learning/">
+        Linear Algebra for Machine Learning
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Linear%20Displacement/">
+        Linear Displacement
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Linear%20Electron%20Flow/">
+        Linear Electron Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Linear%20Velocity/">
+        Linear Velocity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Liquid-liquid%20extraction/">
+        Liquid-liquid extraction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lithosphere/">
+        Lithosphere
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lower%20Mantle/">
+        Lower Mantle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lunar%20Motions/">
+        Lunar Motions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Luster/">
+        Luster
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lycophyta/">
+        Lycophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Magnetic%20quantum%20number/">
+        Magnetic quantum number
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Mantle/">
+        Mantle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Mass%20Spectrometer/">
+        Mass Spectrometer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Measures%20of%20concentration/">
+        Measures of concentration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Minerals/">
+        Minerals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Modern%20Astronomy/">
+        Modern Astronomy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Molality/">
+        Molality
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Molar%20Mass/">
+        Molar Mass
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Molarity/">
+        Molarity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Mole/">
+        Mole
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Moles/">
+        Moles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Moment%20of%20Inertia/">
+        Moment of Inertia
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Monilophyta/">
+        Monilophyta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Mountain%20Belts/">
+        Mountain Belts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../My%20running%20journey/">
+        My running journey
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../NADH/">
+        NADH
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Nebular%20Hypothesis/">
+        Nebular Hypothesis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Newton%27s%20Second%20Law/">
+        Newton's Second Law
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Nitric%20Oxide/">
+        Nitric Oxide
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Nitric%20acid%20reactions/">
+        Nitric acid reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Nonelectrolytes/">
+        Nonelectrolytes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Nonvascular%20plants/">
+        Nonvascular plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Normality/">
+        Normality
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Oceanic%20Crust/">
+        Oceanic Crust
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Oceanic%20Ridge/">
+        Oceanic Ridge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Oomycetes/">
+        Oomycetes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Orbital%20Velocity/">
+        Orbital Velocity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Orbital%20angular%20momentum%20quantum%20number/">
+        Orbital angular momentum quantum number
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Organic%20nomenclature/">
+        Organic nomenclature
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Outer%20Core/">
+        Outer Core
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ovule/">
+        Ovule
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Oxidation%20state/">
+        Oxidation states
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Parabasalids/">
+        Parabasalids
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Parallel%20Axis%20Theorem/">
+        Parallel Axis Theorem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pascal%27s%20Law/">
+        Pascal's Law
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pauli%20exclusion%20principle/">
+        Pauli exclusion principle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Period%20of%20Orbit/">
+        Period of Orbit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Photorespiration/">
+        Photorespiration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Photosystem%20I/">
+        Photosystem I
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Photosystem%20II/">
+        Photosystem II
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Photosystem/">
+        Photosystem
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pipets/">
+        Pipets
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Plants/">
+        Plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Plasmodium/">
+        Plasmodium
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Plate%20Motion/">
+        Plate Motion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pollen%20grain/">
+        Pollen grain
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Power/">
+        Power
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Precession%20of%20a%20Gyroscope/">
+        Precession of a Gyroscope
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Precipitation%20Reactions/">
+        Precipitation Reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pressure/">
+        Pressure
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Principal%20quantum%20number/">
+        Principal quantum number
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Protein%20Phosphorylation/">
+        Protein Phosphorylation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Proteobacteria/">
+        Proteobacteria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Protists/">
+        Protists
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Protonema/">
+        Protonema
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Ptolemy%27s%20Model/">
+        Ptolemy's Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Quorum%20Sensing/">
+        Quorum Sensing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Radial%20distribution%20function/">
+        Radial distribution function
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Radioactive%20decay/">
+        Radioactive decay
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Radiolarians/">
+        Radiolarians
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Reaction%20stoichiometry/">
+        Reaction stoichiometry
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Reaction%20writing/">
+        Reaction writing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Receptor%20Tyrosine%20Kinases/">
+        Receptor Tyrosine Kinases
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Red%20algae/">
+        Red algae
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Redox%20reactions/">
+        Redox reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Reference%20Line/">
+        Reference Line
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Refluxes/">
+        Refluxes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Regulation%20of%20Response/">
+        Regulation of Response
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Rhizaria/">
+        Rhizaria
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Rocks/">
+        Rocks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Rotational%20Kinetic%20Energy/">
+        Rotational Kinetic Energy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../SAR%20%28supergroup%29/">
+        SAR
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Saturation/">
+        Saturation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Scaffolding%20Proteins/">
+        Scaffolding Proteins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Second%20Messengers/">
+        Second Messengers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Seed%20vascular%20plants/">
+        Seed vascular plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Seedless%20vascular%20plants/">
+        Seedless vascular plants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Separation%20techniques/">
+        Separation techniques
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Shield/">
+        Shield
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Single%20displacement%20reactions/">
+        Single displacement reactions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Slime%20molds/">
+        Slime molds
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Smooth%20Rolling/">
+        Smooth Rolling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Solution%20chemistry/">
+        Solution chemistry
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Specific%20Gravity/">
+        Specific Gravity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Spherical%20polar%20coordinates/">
+        Spherical polar coordinates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Spirochetes/">
+        Spirochetes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Sporophyll/">
+        Sporophyll
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stable%20Interior/">
+        Stable Interior
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stable%20Platform/">
+        Stable Platform
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stamen/">
+        Stamen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Standard%20Solution/">
+        Standard Solution
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stellar%20Parallax/">
+        Stellar Parallax
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stoichiometry/">
+        Stoichiometry
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Stramenopila/">
+        Stramenopila
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Streak/">
+        Streak
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Strong%20Electrolytes/">
+        Strong Electrolytes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Sutherland%27s%20Experiments/">
+        Sutherland's Experiments
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Tenacity/">
+        Tenacity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Titration/">
+        Titration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Torque/">
+        Torque
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Tublinids/">
+        Tublinids
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Unikonta/">
+        Unikonta
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Unit%20cells/">
+        Unit cells
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Untitled/">
+        Untitled
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Upper%20Mantle/">
+        Upper Mantle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../VSEPR%20model/">
+        VSEPR model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Van%27t%20Hoff%20factor/">
+        Van't Hoff factor (i)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Volumetric%20analysis/">
+        Volumetric analysis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Weak%20Electrolytes/">
+        Weak Electrolytes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Whisk%20ferns/">
+        Whisk ferns
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Wiskott-Aldrich%20Syndrome/">
+        Wiskott-Aldrich Syndrome
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Work/">
+        Work
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cAMP/">
+        cAMP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../effects%20of%20special%20relativity/">
+        effects of special relativity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../electron%20promotion/">
+        electron promotion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../euler%27s%20totient%20function/">
+        euler's totient function
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gallilean%20boosts/">
+        **gallilean boosts**
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../gouy%20balance/">
+        gouy balance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hybridization/">
+        Hybridization
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../length%20contraction/">
+        length contraction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../lorentz%20boosts/">
+        lorentz boosts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../m.o.%20theory%20on%20heteronuclear%20diatomic%20molecules/">
+        [[molecular orbital theory|m.o. theory]] on heteronuclear diatomic molecules
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../models%20of%20molecular%20shape%20and%20structure/">
+        models of molecular shape and structure
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../molecular%20orbital%20theory/">
+        Molecular orbital theory
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../molecular%20orbitals/">
+        molecular orbitals
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../perpendicular%20length%20contraction%20is%20conserved/">
+        perpendicular length contraction conserved
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../photoelectron%20spectroscopy/">
+        Photoelectron spectroscopy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../postulates%20of%20special%20relativity/">
+        Postulates of special relativity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../principle%20of%20relativity/">
+        principle of relativity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../rear-clock-ahead%20effect/">
+        rear-clock-ahead effect
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../relative%20simultaneity/">
+        relative simultaneity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../s-orbital/">
+        s-orbital
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../time%20dilation/">
+        time dilation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../valence%20bond%20theory/">
+        valence bond theory
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          03.02 high school
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="03.02 high school" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          03.02 high school
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/China%27s%20grand%20canal/">
+        China's grand canal
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/East%20Asian%20history%20in%20the%20period%20600s-1200s/">
+        East Asian history in the period 600s 1200s
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Equal-field%20system/">
+        Equal field system
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Liao%20dynasty/">
+        Liao dynasty
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Neo-Confucians/">
+        Neo Confucians
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Postclassical%20Chinese%20civilization/">
+        Postclassical Chinese civilization
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Research%20Plan/">
+        Research Plan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Song%20dynasty/">
+        Song dynasty
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Sui%20dynasty/">
+        Sui dynasty
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Tang%20dynasty/">
+        Tang dynasty
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Wang%20Anshi/">
+        Wang Anshi
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Wendi/">
+        Wendi
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Xuanzong/">
+        Xuanzong
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/YOLOv7%20-%20Wang%20et%20al./">
+        YOLOv7   Wang et al.
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Yangdi/">
+        Yangdi
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/Zhao%20Kuangyin/">
+        Zhao Kuangyin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.02%20high%20school/pedestrian%20attribute%20recognition%20at%20far%20distance/">
+        Pedestrian attribute recognition at far distance
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          03.03 attachments
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="03.03 attachments" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          03.03 attachments
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.03%20attachments/Normality%20example.excalidraw/">
+        Normality example.excalidraw
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.03%20attachments/empirical%20formula%20example.excalidraw/">
+        Empirical formula example.excalidraw
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          03.04 templates
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="03.04 templates" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          03.04 templates
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.04%20templates/atomic%20note/">
+        &lt;% tp.file.title %&gt;
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03.04%20templates/daily/">
+        Daily
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Generative Models of Brain Dynamics</h1>
+<p>/neuroscience #paper</p>
+<blockquote>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T12:57:43.433Z","updated":"2022-08-17T12:57:43.433Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":2155,"end":2242},{"type":"TextQuoteSelector","exact":"such efforts provide little insightinto the observed mechanisms and emission properties","prefix":"ing algo-rithms to complex data—","suffix":". Asthe above quote from R. Feyn"}]}]}</code>
+%%
+<em>%%PREFIX%%ing algo-rithms to complex data—%%HIGHLIGHT%% <mark>such efforts provide little insightinto the observed mechanisms and emission properties</mark> %%POSTFIX%%. Asthe above quote from R. Feyn</em>
+%%LINK%%<a href="#2c6mpr90t1a">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^2c6mpr90t1a</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T12:58:43.022Z","text":"Generative models are much better for inferencing **rather** than predicting than \"black-box models\".","updated":"2022-08-17T12:58:43.022Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":2329,"end":2538},{"type":"TextQuoteSelector","exact":"The importance of develop-ing interpretable algorithms for biological data– beyondthe standard “black-box” models of conventional machinelearning–is underscored by the pressing need for superiorexplainability ","prefix":"odsare understanding the brain. ","suffix":"seen in medical and health-relat"}]}]}</code>
+%%
+<em>%%PREFIX%%odsare understanding the brain.%%HIGHLIGHT%% <mark>The importance of develop-ing interpretable algorithms for biological data– beyondthe standard “black-box” models of conventional machinelearning–is underscored by the pressing need for superiorexplainability</mark> %%POSTFIX%%seen in medical and health-relat</em>
+%%LINK%%<a href="#eedyqmjiocq">show annotation</a>
+%%COMMENT%%
+Generative models are much better for inferencing <strong>rather</strong> than predicting than "black-box models".
+%%TAGS%%</p>
+<p>^eedyqmjiocq</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:01:46.288Z","updated":"2022-08-17T13:01:46.288Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":3489,"end":3724},{"type":"TextQuoteSelector","exact":"the goal of science is to leverage prior knowledge, notmerely to forecast the future (a task well suited to engi-neering problems), but to answer “why,” questions, and tofacilitate the discovery of mechanisms and principles ofoperation","prefix":"nce over prediction? Put simply:","suffix":". Bzdok and Ioannidis [3] discus"}]}]}</code>
+%%
+<em>%%PREFIX%%nce over prediction? Put simply:%%HIGHLIGHT%% <mark>the goal of science is to leverage prior knowledge, notmerely to forecast the future (a task well suited to engi-neering problems), but to answer “why,” questions, and tofacilitate the discovery of mechanisms and principles ofoperation</mark> %%POSTFIX%%. Bzdok and Ioannidis [3] discus</em>
+%%LINK%%<a href="#wydwznna8d">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^wydwznna8d</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:02:44.423Z","updated":"2022-08-17T13:02:44.423Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":4036,"end":4215},{"type":"TextQuoteSelector","exact":"Not only does explicit modeling allowfor explanation (which is the main point of science), but italso directs experiments and allows for the generation ofnew scientific questions.","prefix":"uld be, be-yond prediction [4]. ","suffix":"In this paper, we demonstrate wh"}]}]}</code>
+%%
+<em>%%PREFIX%%uld be, be-yond prediction [4].%%HIGHLIGHT%% <mark>Not only does explicit modeling allowfor explanation (which is the main point of science), but italso directs experiments and allows for the generation ofnew scientific questions.</mark> %%POSTFIX%%In this paper, we demonstrate wh</em>
+%%LINK%%<a href="#xvf5u8pbz6d">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^xvf5u8pbz6d</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:05:13.703Z","text":"That's another reason why alternate/non-standard models may be preferred (like generative ones) rather than the industry-standard \"black-box\" models.","updated":"2022-08-17T13:05:13.703Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":5006,"end":5088},{"type":"TextQuoteSelector","exact":"A neural ensemble is dis-tinctive from the general notion of the dynamical system:","prefix":"s:Neural dynamics is different. ","suffix":"• Unlike chemical oscillations a"}]}]}</code>
+%%
+<em>%%PREFIX%%s:Neural dynamics is different.%%HIGHLIGHT%% <mark>A neural ensemble is dis-tinctive from the general notion of the dynamical system:</mark> %%POSTFIX%%• Unlike chemical oscillations a</em>
+%%LINK%%<a href="#en8frgw37fa">show annotation</a>
+%%COMMENT%%
+That's another reason why alternate/non-standard models may be preferred (like generative ones) rather than the industry-standard "black-box" models.
+%%TAGS%%</p>
+<p>^en8frgw37fa</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:46:26.910Z","updated":"2022-08-17T13:46:26.910Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":7358,"end":7457},{"type":"TextQuoteSelector","exact":"Biophysical models are re-alistic models which encapsulate biological as-sumptions and constraints.","prefix":"bjective:1. Biophysical models: ","suffix":" Due to large num-ber of compone"}]}]}</code>
+%%
+<em>%%PREFIX%%bjective:1. Biophysical models:%%HIGHLIGHT%% <mark>Biophysical models are re-alistic models which encapsulate biological as-sumptions and constraints.</mark> %%POSTFIX%%Due to large num-ber of compone</em>
+%%LINK%%<a href="#gfuscneoxnc">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^gfuscneoxnc</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:48:05.607Z","text":"Phenomenological models like this may not be as realistic as biophysical models in capturing the true dynamics of the brain.","updated":"2022-08-17T13:48:05.607Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":8317,"end":8594},{"type":"TextQuoteSelector","exact":"Kuramoto oscillators [8] in which the goal is tofind the parameters that best reconstruct the be-havior of the system. These parameters describethe property of the phenomenon (e.g., the strengthof the synchrony), although they do not directlyexpress the fabric of the organism.","prefix":"A famous example is the model of","suffix":"3. Agnostic computational: Data-"}]}]}</code>
+%%
+<em>%%PREFIX%%A famous example is the model of%%HIGHLIGHT%% <mark>Kuramoto oscillators [8] in which the goal is tofind the parameters that best reconstruct the be-havior of the system. These parameters describethe property of the phenomenon (e.g., the strengthof the synchrony), although they do not directlyexpress the fabric of the organism.</mark> %%POSTFIX%%3. Agnostic computational: Data-</em>
+%%LINK%%<a href="#viy0jznoch8">show annotation</a>
+%%COMMENT%%
+Phenomenological models like this may not be as realistic as biophysical models in capturing the true dynamics of the brain.
+%%TAGS%%</p>
+<p>^viy0jznoch8</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:51:14.730Z","updated":"2022-08-17T13:51:14.730Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":8093,"end":8185},{"type":"TextQuoteSelector","exact":"using well-developed tools in StatisticalPhysics and Complex Systems for brain simu-lations.","prefix":"models open the possi-bility of ","suffix":" In such models, some priors of "}]}]}</code>
+%%
+<em>%%PREFIX%%models open the possi-bility of%%HIGHLIGHT%% <mark>using well-developed tools in StatisticalPhysics and Complex Systems for brain simu-lations.</mark> %%POSTFIX%%In such models, some priors of</em>
+%%LINK%%<a href="#phxl9olgemo">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^phxl9olgemo</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T13:51:30.335Z","text":"Basically many deep learning models that are very effective in other industries like NLP and computer vision.","updated":"2022-08-17T13:51:30.335Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":8597,"end":8744},{"type":"TextQuoteSelector","exact":"Agnostic computational: Data-driven methodsthat, given a “sufficient” amount of data, canlearn reconstruct the behavior with little priorknowledge.","prefix":"s the fabric of the organism.3. ","suffix":" Examples of such approaches are"}]}]}</code>
+%%
+<em>%%PREFIX%%s the fabric of the organism.3.%%HIGHLIGHT%% <mark>Agnostic computational: Data-driven methodsthat, given a “sufficient” amount of data, canlearn reconstruct the behavior with little priorknowledge.</mark> %%POSTFIX%%Examples of such approaches are</em>
+%%LINK%%<a href="#85r0vrhkhga">show annotation</a>
+%%COMMENT%%
+Basically many deep learning models that are very effective in other industries like NLP and computer vision.
+%%TAGS%%</p>
+<p>^85r0vrhkhga</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T14:03:22.623Z","updated":"2022-08-17T14:03:22.623Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":9577,"end":9774},{"type":"TextQuoteSelector","exact":"each set of approaches presented here can fa-cilitate hybrid solutions by borrowing essential ideas fromother domains (e.g., computer vision and natural languageprocessing) to model brain recording","prefix":"ons (seeFigure 2).We argue that ","suffix":".1 Biophysical ModelsUnderstandi"}]}]}</code>
+%%
+<em>%%PREFIX%%ons (seeFigure 2).We argue that%%HIGHLIGHT%% <mark>each set of approaches presented here can fa-cilitate hybrid solutions by borrowing essential ideas fromother domains (e.g., computer vision and natural languageprocessing) to model brain recording</mark> %%POSTFIX%%.1 Biophysical ModelsUnderstandi</em>
+%%LINK%%<a href="#jdv0sozymu">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^jdv0sozymu</p>
+<p>%%
+<code>annotation-json
+{"text":"Not as generalizable, but way more customized/\"hard-coded\", and isn't substantial enough to understand how the brain produces behaviors.","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":10489,"end":10598},{"type":"TextQuoteSelector","exact":" “bottom-up” approach, whichemphasizes biophysical details for fine-scale simulationand expects the emergence","prefix":"te-gories:the first represents a","suffix":"2. An example of this approachis"}]}],"created":"2022-08-17T14:04:44.933Z","updated":"2022-08-17T14:04:44.933Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf"}</code>
+%%
+<em>%%PREFIX%%te-gories:the first represents a%%HIGHLIGHT%% <mark>“bottom-up” approach, whichemphasizes biophysical details for fine-scale simulationand expects the emergence</mark> %%POSTFIX%%2. An example of this approachis</em>
+%%LINK%%<a href="#7uovr4pu2b6">show annotation</a>
+%%COMMENT%%
+Not as generalizable, but way more customized/"hard-coded", and isn't substantial enough to understand how the brain produces behaviors.
+%%TAGS%%</p>
+<p>^7uovr4pu2b6</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:36:45.825Z","text":"Prone to biases but can incorporate behaviors without having to meticulously hard-code it in.","updated":"2022-08-17T18:36:45.825Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":10669,"end":10783},{"type":"TextQuoteSelector","exact":" “top-down” schemes focus on explicit high-level functions and designing frameworks based on sometargeted behavior","prefix":"ue Brain project [7].Conversely,","suffix":". Each of the two approaches wor"}]}]}</code>
+%%
+<em>%%PREFIX%%ue Brain project [7].Conversely,%%HIGHLIGHT%% <mark>“top-down” schemes focus on explicit high-level functions and designing frameworks based on sometargeted behavior</mark> %%POSTFIX%%. Each of the two approaches wor</em>
+%%LINK%%<a href="#2bdin6dl0v2">show annotation</a>
+%%COMMENT%%
+Prone to biases but can incorporate behaviors without having to meticulously hard-code it in.
+%%TAGS%%</p>
+<p>^2bdin6dl0v2</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:40:56.714Z","text":"Incorporates genomics to neural dynamics.","updated":"2022-08-17T18:40:56.714Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":12533,"end":12736},{"type":"TextQuoteSelector","exact":"Thesemaps link the spatial distribution of gene expression pat-terns, and neural couplings [18] as well as other large-scaledynamics, e.g., dynamic connectivity as a dependent ofneurogenetic profile [19]","prefix":"hey can help quantify dynamics. ","suffix":".A notable effort in this regard"}]}]}</code>
+%%
+<em>%%PREFIX%%hey can help quantify dynamics.%%HIGHLIGHT%% <mark>Thesemaps link the spatial distribution of gene expression pat-terns, and neural couplings [18] as well as other large-scaledynamics, e.g., dynamic connectivity as a dependent ofneurogenetic profile [19]</mark> %%POSTFIX%%.A notable effort in this regard</em>
+%%LINK%%<a href="#msnzz0d4ug">show annotation</a>
+%%COMMENT%%
+Incorporates genomics to neural dynamics.
+%%TAGS%%</p>
+<p>^msnzz0d4ug</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:42:19.784Z","updated":"2022-08-17T18:42:19.784Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":12775,"end":12965},{"type":"TextQuoteSelector","exact":" Allen Brain Atlas [20]in which genomic data of mice, humans, and non-humanprimates [21] have been collected and mapped for under-standing structural and functional architecture of the brain","prefix":"ble effort in this regard is the","suffix":"[22]. While genomic data by itse"}]}]}</code>
+%%
+<em>%%PREFIX%%ble effort in this regard is the%%HIGHLIGHT%% <mark>Allen Brain Atlas [20]in which genomic data of mice, humans, and non-humanprimates [21] have been collected and mapped for under-standing structural and functional architecture of the brain</mark> %%POSTFIX%%[22]. While genomic data by itse</em>
+%%LINK%%<a href="#syihii8bxk8">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^syihii8bxk8</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:43:51.412Z","text":"Mechanism explained by **Hodgkin-Huxley equations** and corresponding circuits.","updated":"2022-08-17T18:43:51.412Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":14057,"end":14134},{"type":"TextQuoteSelector","exact":"Information transmission is mainly basedon the emission of action potentials.","prefix":"pal determinantof the dynamics. ","suffix":" The mechanism of thisflow of io"}]}]}</code>
+%%
+<em>%%PREFIX%%pal determinantof the dynamics.%%HIGHLIGHT%% <mark>Information transmission is mainly basedon the emission of action potentials.</mark> %%POSTFIX%%The mechanism of thisflow of io</em>
+%%LINK%%<a href="#ydbr5mtt2a8">show annotation</a>
+%%COMMENT%%
+Mechanism explained by <strong>Hodgkin-Huxley equations</strong> and corresponding circuits.
+%%TAGS%%</p>
+<p>^ydbr5mtt2a8</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:45:15.664Z","updated":"2022-08-17T18:45:15.664Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":14261,"end":14428},{"type":"TextQuoteSelector","exact":"The electri-cal current of the equivalent circuit is described by fourdifferential equations that incorporate membrane capacityand the gating variables of the channels","prefix":"ons and corresponding circuits. ","suffix":" [26]. While theHodgkin-Huxley m"}]}]}</code>
+%%
+<em>%%PREFIX%%ons and corresponding circuits.%%HIGHLIGHT%% <mark>The electri-cal current of the equivalent circuit is described by fourdifferential equations that incorporate membrane capacityand the gating variables of the channels</mark> %%POSTFIX%%[26]. While theHodgkin-Huxley m</em>
+%%LINK%%<a href="#bq28c5niycb">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^bq28c5niycb</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:46:26.021Z","updated":"2022-08-17T18:46:26.021Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":14667,"end":14930},{"type":"TextQuoteSelector","exact":"Themain difficulty with the Hodgkin-Huxley model is that itrequires solving a system of differential equations for eachof the gating parameters of each of the single ion chan-nels of a cell while there are more than 300 types of ionchannels discovered as of today","prefix":"els of the neuronal population. ","suffix":" [29]. Various relaxing as-sumpt"}]}]}</code>
+%%
+<em>%%PREFIX%%els of the neuronal population.%%HIGHLIGHT%% <mark>Themain difficulty with the Hodgkin-Huxley model is that itrequires solving a system of differential equations for eachof the gating parameters of each of the single ion chan-nels of a cell while there are more than 300 types of ionchannels discovered as of today</mark> %%POSTFIX%%[29]. Various relaxing as-sumpt</em>
+%%LINK%%<a href="#t74ybiil54">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^t74ybiil54</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:47:09.335Z","text":"A model based on the Hodgkin-Huxley model that assumes firing (of the action potential) occurs when the accumulated electrical input at the membrane exceeds a threshold.\n* Has variations based on type of synapse (i.e. leaky or refractory)","updated":"2022-08-17T18:47:09.335Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":15691,"end":15710},{"type":"TextQuoteSelector","exact":" integrate-and-fire","prefix":"30]. The latter model isknown as","suffix":" [31], and it comes in different"}]}]}</code>
+%%
+<em>%%PREFIX%%30]. The latter model isknown as%%HIGHLIGHT%% <mark>integrate-and-fire</mark> %%POSTFIX%%[31], and it comes in different</em>
+%%LINK%%<a href="#gfmn9a7hd36">show annotation</a>
+%%COMMENT%%
+A model based on the Hodgkin-Huxley model that assumes firing (of the action potential) occurs when the accumulated electrical input at the membrane exceeds a threshold.
+* Has variations based on type of synapse (i.e. leaky or refractory)
+%%TAGS%%</p>
+<p>^gfmn9a7hd36</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:50:23.902Z","updated":"2022-08-17T18:50:23.902Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":15849,"end":16001},{"type":"TextQuoteSelector","exact":"In order to model interesting dynamics of various ion chan-nels, a model of compartments of dendrites, called themulticompartment model, can be employed","prefix":"aky or refractory synapses [32].","suffix":". An exclusivereview article by "}]}]}</code>
+%%
+<em>%%PREFIX%%aky or refractory synapses [32].%%HIGHLIGHT%% <mark>In order to model interesting dynamics of various ion chan-nels, a model of compartments of dendrites, called themulticompartment model, can be employed</mark> %%POSTFIX%%. An exclusivereview article by</em>
+%%LINK%%<a href="#k4xy3mh35u">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^k4xy3mh35u</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:51:54.786Z","text":"DTI Uses diffusion of water to determine the anatomy of a neural network without influence from the brain's functions.","updated":"2022-08-17T18:51:54.786Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":16934,"end":17076},{"type":"TextQuoteSelector","exact":" The underlyingstructural data based on the geometry of the white matter isdrawn from diffusion tensor imaging (DTI) [35] of the hu-man brain.","prefix":"ndrite trees and fewer synapses.","suffix":" The microcircuitry of the six-l"}]}]}</code>
+%%
+<em>%%PREFIX%%ndrite trees and fewer synapses.%%HIGHLIGHT%% <mark>The underlyingstructural data based on the geometry of the white matter isdrawn from diffusion tensor imaging (DTI) [35] of the hu-man brain.</mark> %%POSTFIX%%The microcircuitry of the six-l</em>
+%%LINK%%<a href="#x8nqn4pbgzj">show annotation</a>
+%%COMMENT%%
+DTI Uses diffusion of water to determine the anatomy of a neural network without influence from the brain's functions.
+%%TAGS%%</p>
+<p>^x8nqn4pbgzj</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:55:39.247Z","updated":"2022-08-17T18:55:39.247Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":17172,"end":17334},{"type":"TextQuoteSelector","exact":"The spikingdynamic employed in this model comes from [36] and it isa simplification of the Hodgkin-Huxley model as it outputsthe firing rates instead of currents.","prefix":"d based on cats’ visual cortex. ","suffix":" On a larger scale, someComputat"}]}]}</code>
+%%
+<em>%%PREFIX%%d based on cats’ visual cortex.%%HIGHLIGHT%% <mark>The spikingdynamic employed in this model comes from [36] and it isa simplification of the Hodgkin-Huxley model as it outputsthe firing rates instead of currents.</mark> %%POSTFIX%%On a larger scale, someComputat</em>
+%%LINK%%<a href="#26hciq2tb4s">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^26hciq2tb4s</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:55:50.373Z","text":"Considered synaptic plasticity, spontaneous activity, chaotic dynamics, different brain waves, oscillatory activity, etc.","updated":"2022-08-17T18:55:50.373Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":18127,"end":18305},{"type":"TextQuoteSelector","exact":"The significance of this simulation compared to precedingefforts is its inclusion of all cortical regions and some oftheir interplays in the form of cortico-cortical connections.","prefix":"brainstem) are also implemented.","suffix":"The researchers also considered "}]}]}</code>
+%%
+<em>%%PREFIX%%brainstem) are also implemented.%%HIGHLIGHT%% <mark>The significance of this simulation compared to precedingefforts is its inclusion of all cortical regions and some oftheir interplays in the form of cortico-cortical connections.</mark> %%POSTFIX%%The researchers also considered</em>
+%%LINK%%<a href="#dorbnc694nn">show annotation</a>
+%%COMMENT%%
+Considered synaptic plasticity, spontaneous activity, chaotic dynamics, different brain waves, oscillatory activity, etc.
+%%TAGS%%</p>
+<p>^dorbnc694nn</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T18:57:28.943Z","text":"Wanted to capture the brain in its entirety. However, very unlikely as the simulation **doesn't** account for glial cells.","updated":"2022-08-17T18:57:28.943Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":19105,"end":19231},{"type":"TextQuoteSelector","exact":"Blue BrainProject [7] was founded in 2005 as a biological simulationof synapses and neurons of the neocortical microcircuitry.","prefix":"zhikevich and Edelman [34], the ","suffix":"The ambitious goal was to extend"}]}]}</code>
+%%
+<em>%%PREFIX%%zhikevich and Edelman [34], the%%HIGHLIGHT%% <mark>Blue BrainProject [7] was founded in 2005 as a biological simulationof synapses and neurons of the neocortical microcircuitry.</mark> %%POSTFIX%%The ambitious goal was to extend</em>
+%%LINK%%<a href="#d62ww6xgk7">show annotation</a>
+%%COMMENT%%
+Wanted to capture the brain in its entirety. However, very unlikely as the simulation <strong>doesn't</strong> account for glial cells.
+%%TAGS%%</p>
+<p>^d62ww6xgk7</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:00:48.047Z","updated":"2022-08-17T19:00:48.047Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":19875,"end":19987},{"type":"TextQuoteSelector","exact":"That being said, ac-quiring the connectomic map does not necessarily resultin a better understanding of function","prefix":"ller than the human brain [40]. ","suffix":". Note that while theconnectomic"}]}]}</code>
+%%
+<em>%%PREFIX%%ller than the human brain [40].%%HIGHLIGHT%% <mark>That being said, ac-quiring the connectomic map does not necessarily resultin a better understanding of function</mark> %%POSTFIX%%. Note that while theconnectomic</em>
+%%LINK%%<a href="#924war058yu">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^924war058yu</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:02:30.384Z","text":"Automatically generates code for simulating in C++, Python, or Cython. Also more focused on single-compartment models.","updated":"2022-08-17T19:02:30.384Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":21432,"end":21504},{"type":"TextQuoteSelector","exact":"Brian [47] is a Python package for defining acustomized spiking network.","prefix":"struct many-neuron bio-physics. ","suffix":" The package can automati-cally "}]}]}</code>
+%%
+<em>%%PREFIX%%struct many-neuron bio-physics.%%HIGHLIGHT%% <mark>Brian [47] is a Python package for defining acustomized spiking network.</mark> %%POSTFIX%%The package can automati-cally</em>
+%%LINK%%<a href="#g73c1mnm0uc">show annotation</a>
+%%COMMENT%%
+Automatically generates code for simulating in C++, Python, or Cython. Also more focused on single-compartment models.
+%%TAGS%%</p>
+<p>^g73c1mnm0uc</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:03:12.500Z","updated":"2022-08-17T19:03:12.500Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":21764,"end":21829},{"type":"TextQuoteSelector","exact":"GENESIS [49] and NEURON [50] centeraround multicompartment cells.","prefix":" single-compartmentmodels while ","suffix":"NEST is another popular package "}]}]}</code>
+%%
+<em>%%PREFIX%%single-compartmentmodels while%%HIGHLIGHT%% <mark>GENESIS [49] and NEURON [50] centeraround multicompartment cells.</mark> %%POSTFIX%%NEST is another popular package</em>
+%%LINK%%<a href="#m9cthu2alca">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^m9cthu2alca</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:03:40.705Z","updated":"2022-08-17T19:03:40.705Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":21829,"end":21933},{"type":"TextQuoteSelector","exact":"NEST is another popular package for building ad hoc mod-els of spiking neurons with adjusted parameters.","prefix":"eraround multicompartment cells.","suffix":" Theseparameters include the spi"}]}]}</code>
+%%
+<em>%%PREFIX%%eraround multicompartment cells.%%HIGHLIGHT%% <mark>NEST is another popular package for building ad hoc mod-els of spiking neurons with adjusted parameters.</mark> %%POSTFIX%%Theseparameters include the spi</em>
+%%LINK%%<a href="#gudclrvy8ed">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^gudclrvy8ed</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:04:30.500Z","text":"Strategy is the core of neural mass models, spiking neural network, and dynamical causal modeling.","updated":"2022-08-17T19:04:30.500Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":22455,"end":22660},{"type":"TextQuoteSelector","exact":"The steep price of high-resolution computation and theremoteness from high-level cognition can be levitated byreplacing detailed dynamics of single neurons with the col-lective equations of the population.","prefix":"idelines and proposed solutions.","suffix":" This dimensionality-reduction s"}]}]}</code>
+%%
+<em>%%PREFIX%%idelines and proposed solutions.%%HIGHLIGHT%% <mark>The steep price of high-resolution computation and theremoteness from high-level cognition can be levitated byreplacing detailed dynamics of single neurons with the col-lective equations of the population.</mark> %%POSTFIX%%This dimensionality-reduction s</em>
+%%LINK%%<a href="#ay7a5ys13o">show annotation</a>
+%%COMMENT%%
+Strategy is the core of neural mass models, spiking neural network, and dynamical causal modeling.
+%%TAGS%%</p>
+<p>^ay7a5ys13o</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:05:53.184Z","text":"**Mean-field approximation** is used to make the system more explainable and intuitive -- the equations would otherwise be high-dimensional and intractable.\n* Can decrease dimensions by averaging over degrees of freedom","updated":"2022-08-17T19:05:53.184Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":22950,"end":23192},{"type":"TextQuoteSelector","exact":"byreducing the degrees of freedom, one can reduce a mas-sive collection of individual integrate-and-fire equations(mentioned in Subsection 1.2) to a functional DE of theprobabilistic evolution of the whole population known asFokker-Planck DE.","prefix":"an a few cells. In other words, ","suffix":" However, since Fokker-Planck eq"}]}]}</code>
+%%
+<em>%%PREFIX%%an a few cells. In other words,%%HIGHLIGHT%% <mark>byreducing the degrees of freedom, one can reduce a mas-sive collection of individual integrate-and-fire equations(mentioned in Subsection 1.2) to a functional DE of theprobabilistic evolution of the whole population known asFokker-Planck DE.</mark> %%POSTFIX%%However, since Fokker-Planck eq</em>
+%%LINK%%<a href="#a46b5xvt75a">show annotation</a>
+%%COMMENT%%
+<strong>Mean-field approximation</strong> is used to make the system more explainable and intuitive -- the equations would otherwise be high-dimensional and intractable.
+* Can decrease dimensions by averaging over degrees of freedom
+%%TAGS%%</p>
+<p>^a46b5xvt75a</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:11:04.658Z","text":"Membrane potential/single neuron activity is an emergent phenomenon of the *neural ensemble*. \n* The computational bridge that maps the microscopic parameters to the macroscopic ones is based on the Fokker-Planck equations","updated":"2022-08-17T19:11:04.658Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":24631,"end":24857},{"type":"TextQuoteSelector","exact":"The analogous problem for a neural mass modelcan be described with the single-neuron activity and mem-brane potential as the microscopic parameter and the stateof the neural ensemble in phase space as the macroscopicparameter.","prefix":"blems of neuronal popu-lations? ","suffix":" The computational bridge is bas"}]}]}</code>
+%%
+<em>%%PREFIX%%blems of neuronal popu-lations?%%HIGHLIGHT%% <mark>The analogous problem for a neural mass modelcan be described with the single-neuron activity and mem-brane potential as the microscopic parameter and the stateof the neural ensemble in phase space as the macroscopicparameter.</mark> %%POSTFIX%%The computational bridge is bas</em>
+%%LINK%%<a href="#1pnblk0vgap">show annotation</a>
+%%COMMENT%%
+Membrane potential/single neuron activity is an emergent phenomenon of the <em>neural ensemble</em>. 
+* The computational bridge that maps the microscopic parameters to the macroscopic ones is based on the Fokker-Planck equations
+%%TAGS%%</p>
+<p>^1pnblk0vgap</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:17:20.419Z","text":"Very generalizable, making them versatile for use on all sorts of scales.","updated":"2022-08-17T19:17:20.419Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":24942,"end":25066},{"type":"TextQuoteSelector","exact":"Neural mass models can be used both for understandingthe basic principles of neural dynamics and building gener-ative models","prefix":"quations for separate ensembles.","suffix":" [56]. They can also be generali"}]}]}</code>
+%%
+<em>%%PREFIX%%quations for separate ensembles.%%HIGHLIGHT%% <mark>Neural mass models can be used both for understandingthe basic principles of neural dynamics and building gener-ative models</mark> %%POSTFIX%%[56]. They can also be generali</em>
+%%LINK%%<a href="#ymfmr0oazh">show annotation</a>
+%%COMMENT%%
+Very generalizable, making them versatile for use on all sorts of scales.
+%%TAGS%%</p>
+<p>^ymfmr0oazh</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:18:14.279Z","text":"More realistic because:\n* Integrates different inhibitory and excitatory subpopulations\n* System is described by two state variables\n* Accounts for Dale's principle -- each neuron is considered to either be inhibitory or excitatory, no in-between.","updated":"2022-08-17T19:18:14.279Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":26204,"end":26319},{"type":"TextQuoteSelector","exact":"Wilson-Cowan is a large-scale model of collective activ-ity of neural population based on mean-field approxima-tion","prefix":"3] as in [59].1.3.2 Wilson-Cowan","suffix":" (see Subsection 1.3.1). Seeming"}]}]}</code>
+%%
+<em>%%PREFIX%%3] as in [59].1.3.2 Wilson-Cowan%%HIGHLIGHT%% <mark>Wilson-Cowan is a large-scale model of collective activ-ity of neural population based on mean-field approxima-tion</mark> %%POSTFIX%%(see Subsection 1.3.1). Seeming</em>
+%%LINK%%<a href="#l1lci01jve">show annotation</a>
+%%COMMENT%%
+More realistic because:
+* Integrates different inhibitory and excitatory subpopulations
+* System is described by two state variables
+* Accounts for Dale's principle -- each neuron is considered to either be inhibitory or excitatory, no in-between.
+%%TAGS%%</p>
+<p>^l1lci01jve</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:22:46.723Z","text":"Because determining effective connectivity of brain regions with different functions is extremely important in developing realistic and explainable morels.\n\nFound based on:\n1. Anatomical and functional couplings\n2. Induced effect of stimuli\n3. Parameters describing influence of input on intrinsic couplings","updated":"2022-08-17T19:22:46.723Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":28170,"end":28346},{"type":"TextQuoteSelector","exact":"Dynamical Causal Mod-eling (DCM), introduced in [54], quantitatively generatesthe connectivities that fit the observed data by maximizingmodel evidence, aka marginal likelihood","prefix":"ausible and explainable models. ","suffix":" of the model [78].In a graph wh"}]}]}</code>
+%%
+<em>%%PREFIX%%ausible and explainable models.%%HIGHLIGHT%% <mark>Dynamical Causal Mod-eling (DCM), introduced in [54], quantitatively generatesthe connectivities that fit the observed data by maximizingmodel evidence, aka marginal likelihood</mark> %%POSTFIX%%of the model [78].In a graph wh</em>
+%%LINK%%<a href="#mha4ipamekl">show annotation</a>
+%%COMMENT%%
+Because determining effective connectivity of brain regions with different functions is extremely important in developing realistic and explainable morels.</p>
+<p>Found based on:
+1. Anatomical and functional couplings
+2. Induced effect of stimuli
+3. Parameters describing influence of input on intrinsic couplings
+%%TAGS%%</p>
+<p>^mha4ipamekl</p>
+<p>%%
+<code>annotation-json
+{"text":"Idea of using an ANN with threshold spiking behavior.\n* Instead of being on a time scale, are event-based with the event being action potential depolarization.","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":29229,"end":29365},{"type":"TextQuoteSelector","exact":"their ideaformed the basis for a particular type of trainable networkknown as spiking neural networks (SNN) or biologicalneural networks","prefix":". Despite being oversimplified,","suffix":"(as in [53]). Note that the dis"}]}],"created":"2022-08-17T19:27:34.436Z","updated":"2022-08-17T19:27:34.436Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf"}</code>
+%%
+<em>%%PREFIX%%. Despite being oversimplified,%%HIGHLIGHT%% <mark>their ideaformed the basis for a particular type of trainable networkknown as spiking neural networks (SNN) or biologicalneural networks</mark> %%POSTFIX%%(as in [53]). Note that the dis</em>
+%%LINK%%<a href="#bmdd9vbhwrk">show annotation</a>
+%%COMMENT%%
+Idea of using an ANN with threshold spiking behavior.
+* Instead of being on a time scale, are event-based with the event being action potential depolarization.
+%%TAGS%%</p>
+<p>^bmdd9vbhwrk</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:28:40.892Z","updated":"2022-08-17T19:28:40.892Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":29683,"end":29793},{"type":"TextQuoteSelector","exact":"the activity in thisarchitecture (transmission) is not continuous in time (i.e.,during each propagation cycle)","prefix":"ntrast to deep neural networks, ","suffix":". Instead, the activities are3 F"}]}]}</code>
+%%
+<em>%%PREFIX%%ntrast to deep neural networks,%%HIGHLIGHT%% <mark>the activity in thisarchitecture (transmission) is not continuous in time (i.e.,during each propagation cycle)</mark> %%POSTFIX%%. Instead, the activities are3 F</em>
+%%LINK%%<a href="#1zt177fu38z">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^1zt177fu38z</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:29:59.143Z","text":"1. No Von Neumann bottleneck -- no limitations on throughput\n2. Has features not widely implemented in deep networks: synaptic plasticity, high parallelism, high connectivity, resilience, low speed and frequency of communication","updated":"2022-08-17T19:29:59.143Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":30025,"end":30208},{"type":"TextQuoteSelector","exact":"The disparity in energy consumption and computing architecture of biological and silicon neurons are the mostimportant factors that raise eyebrows in assessing brain-like algorithms. ","prefix":"es tailored for spiking networks","suffix":"The brain consumes ∼20 watts ofp"}]}]}</code>
+%%
+<em>%%PREFIX%%es tailored for spiking networks%%HIGHLIGHT%% <mark>The disparity in energy consumption and computing architecture of biological and silicon neurons are the mostimportant factors that raise eyebrows in assessing brain-like algorithms.</mark> %%POSTFIX%%The brain consumes ∼20 watts ofp</em>
+%%LINK%%<a href="#imx431v5xjh">show annotation</a>
+%%COMMENT%%
+1. No Von Neumann bottleneck -- no limitations on throughput
+2. Has features not widely implemented in deep networks: synaptic plasticity, high parallelism, high connectivity, resilience, low speed and frequency of communication
+%%TAGS%%</p>
+<p>^imx431v5xjh</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:38:47.443Z","updated":"2022-08-17T19:38:47.443Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":31280,"end":31372},{"type":"TextQuoteSelector","exact":"A potential solution for narrowing this computation gap can be sought at the hardware level.","prefix":" targeting hardware design [97].","suffix":" An instance ofsuch a dedicated "}]}]}</code>
+%%
+<em>%%PREFIX%%targeting hardware design [97].%%HIGHLIGHT%% <mark>A potential solution for narrowing this computation gap can be sought at the hardware level.</mark> %%POSTFIX%%An instance ofsuch a dedicated</em>
+%%LINK%%<a href="#wcrc479tnms">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^wcrc479tnms</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T19:39:10.179Z","text":"Thus, resemble the brain more realistically.\n\n* SpiNNaker, based on low-power microprocessors\n* TrueNorth chips by IBM\n* Loihi chips by Intel, consisting of dandrite units, axon units, and a learning unit\n\n**Dandrite** units update state variables, **axon** units generate the feed for cores, and **learning** unit updates weights based on learning rules.\n","updated":"2022-08-17T19:39:10.179Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":31541,"end":31655},{"type":"TextQuoteSelector","exact":"An NPU is an array of neurosynaptic cores that containcomputing models (neurons) and memory within the same unit. ","prefix":"he equation from the beginning. ","suffix":"In short, the advantage of using"}]}]}</code>
+%%
+<em>%%PREFIX%%he equation from the beginning.%%HIGHLIGHT%% <mark>An NPU is an array of neurosynaptic cores that containcomputing models (neurons) and memory within the same unit.</mark> %%POSTFIX%%In short, the advantage of using</em>
+%%LINK%%<a href="#1r9cvhu1gei">show annotation</a>
+%%COMMENT%%
+Thus, resemble the brain more realistically.</p>
+<ul>
+<li>SpiNNaker, based on low-power microprocessors</li>
+<li>TrueNorth chips by IBM</li>
+<li>Loihi chips by Intel, consisting of dandrite units, axon units, and a learning unit</li>
+</ul>
+<p><strong>Dandrite</strong> units update state variables, <strong>axon</strong> units generate the feed for cores, and <strong>learning</strong> unit updates weights based on learning rules.</p>
+<p>%%TAGS%%</p>
+<p>^1r9cvhu1gei</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T20:21:32.474Z","updated":"2022-08-17T20:21:32.474Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":33199,"end":33358},{"type":"TextQuoteSelector","exact":" NueCube is a 3D SNN withplasticity that learns the connections among populations from various STBD modulations such as EEG, fMRI,genetic, DTI, MEG, and NIRS. ","prefix":"tion discussed above is NeuCube.","suffix":"Gene regulatory networks can be "}]}]}</code>
+%%
+<em>%%PREFIX%%tion discussed above is NeuCube.%%HIGHLIGHT%% <mark>NueCube is a 3D SNN withplasticity that learns the connections among populations from various STBD modulations such as EEG, fMRI,genetic, DTI, MEG, and NIRS.</mark> %%POSTFIX%%Gene regulatory networks can be</em>
+%%LINK%%<a href="#5z4djyb5lzd">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^5z4djyb5lzd</p>
+<p>%%
+<code>annotation-json
+{"created":"2022-08-17T20:27:25.437Z","updated":"2022-08-17T20:27:25.437Z","document":{"title":"2112.12147.pdf","link":[{"href":"urn:x-pdf:1839968645432623c60a86a73a63cde9"},{"href":"https://arxiv.org/pdf/2112.12147.pdf"}],"documentFingerprint":"1839968645432623c60a86a73a63cde9"},"uri":"https://arxiv.org/pdf/2112.12147.pdf","target":[{"source":"https://arxiv.org/pdf/2112.12147.pdf","selector":[{"type":"TextPositionSelector","start":34565,"end":34764},{"type":"TextQuoteSelector","exact":" spikingnetworks are more efficient in computation compared toother types of neural networks such as sigmoidal. There-fore it is worthwhile to implement SNNs in a more agnosticmanner as spiking RNNs.","prefix":"es that concerning network size,","suffix":" Examples of such promisingimple"}]}]}</code>
+%%
+<em>%%PREFIX%%es that concerning network size,%%HIGHLIGHT%% <mark>spikingnetworks are more efficient in computation compared toother types of neural networks such as sigmoidal. There-fore it is worthwhile to implement SNNs in a more agnosticmanner as spiking RNNs.</mark> %%POSTFIX%%Examples of such promisingimple</em>
+%%LINK%%<a href="#eawixhjjsa">show annotation</a>
+%%COMMENT%%</p>
+<p>%%TAGS%%</p>
+<p>^eawixhjjsa</p>
+</blockquote>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Gametangia" class="md-footer__link md-footer__link--prev" href="../Gametangia/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Gametangia
+            </div>
+</div>
+</a>
+<a aria-label="Next: Geocentric View" class="md-footer__link md-footer__link--next" href="../Geocentric%20View/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Geocentric View
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
